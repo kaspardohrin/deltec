@@ -14,4 +14,5 @@ void setup() {
 		tailServo.attach(SERVO_PIN, 1000, 2000); // Attach the servo after it has been detatched
 	}
   tailServo.write(0);
+  wiggleTail();
 }

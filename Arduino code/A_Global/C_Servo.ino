@@ -30,7 +30,6 @@ void idleMovementTail() {
 }
 
 void selectNextTailIdleMovevent() {
-  Serial.println(nextIdleMovementTail);
   if (nextIdleMovementTail != 0) {
     // The next idle movement will be straight tail if it was different this time
     nextIdleMovementTail = 0;
@@ -46,22 +45,24 @@ void selectNextTailIdleMovevent() {
 
 void wiggleTail() {
   wiggling = true;
-  intervalIdleTail = 500;
+  intervalIdleTail = 100;
   // wiggle tail animation X times
-  if (wiggleCount < 5) {
+  if (wiggleCount <= 8) {
     // Is tail going left
     if ((wiggleCount % 2) == 0) {
-      tailServo.write(170);
+      tailServo.write(70);
     }
     // or right
     else {
-      tailServo.write(190);
+      tailServo.write(100);
     }
     wiggleCount ++;
+    Serial.println(wiggleCount);
   } else {
     // Tail wiggle done start idle movement again
     wiggleCount = 0;
     wiggling = false;
+    tailServo.write(90);
     selectNextTailIdleMovevent();
   }
 }

@@ -150,7 +150,8 @@ void eyeBlink() {
   // Open eyes
   else {
     setEyeType(nextIdleMovementEyes);
-    intervalBlink = (random(7,15)*1000);
+    // Set blink interval for next blink
+    intervalBlink = (random(10,15)*1000);
   }  
 }
 

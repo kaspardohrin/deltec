@@ -17,7 +17,6 @@ void updateBody() {
   if (currentMillis - previousMillisBlink >= intervalBlink) {
     previousMillisBlink = currentMillis;
     eyeBlink();
-    // wiggleTail();
   }
   // Should the tail change idle position
   if (currentMillis - previousMillisIdleTail >= intervalIdleTail) {
