@@ -1,8 +1,89 @@
-// Code for TM1637 7 segment displays here
-
 // Initiate new 7 segment object
 TM1637Display display_left(SEGMENT_CLK, SEGMENT_1_DIN);
 TM1637Display display_right(SEGMENT_CLK, SEGMENT_2_DIN);
+
+
+/** o _ _ _
+ * _ _ _ _
+*/
+const uint8_t EYE_0[] = {
+	SEG_A | SEG_B | SEG_F | SEG_G,
+	0x00,
+	0x00,
+  0x00
+};
+/** _ o _ _
+ * _ _ _ _
+*/
+const uint8_t EYE_1[] = {
+  0x00,
+	SEG_A | SEG_B | SEG_F | SEG_G,
+	0x00,
+  0x00
+};
+/** _ _ o _
+ * _ _ _ _
+*/
+const uint8_t EYE_2[] = {
+	0x00,
+	0x00,
+	SEG_A | SEG_B | SEG_F | SEG_G,
+  0x00
+};
+/** _ _ _ o
+ * _ _ _ _
+*/
+const uint8_t EYE_3[] = {
+	0x00,
+	0x00,
+  0x00,
+	SEG_A | SEG_B | SEG_F | SEG_G
+};
+
+/** _ _ _ _
+ * _ o _ _
+*/
+const uint8_t EYE_4[] = {
+	0x00,
+	SEG_C | SEG_D | SEG_E | SEG_G,
+	0x00,
+  0x00
+};
+/** _ _ _ _
+ * _ _ o _
+*/
+const uint8_t EYE_5[] = {
+  0x00,
+	0x00,
+	SEG_C | SEG_D | SEG_E | SEG_G,
+  0x00
+};
+/** _ _ _ _
+ * _ - _ _
+*/
+const uint8_t EYE_6[] = {
+	0x00,
+	SEG_G,
+	0x00,
+  0x00
+};
+/** _ _ _ _
+ * _ _ - _
+*/
+const uint8_t EYE_7[] = {
+  0x00,
+	0x00,
+	SEG_G,
+  0x00
+};
+/** _ [ ] _
+*/
+const uint8_t EYE_8[] = {
+	0x00,
+	SEG_A | SEG_D | SEG_E | SEG_F,
+	SEG_A | SEG_B | SEG_C | SEG_D,
+  0x00
+};
 
 /**
  * Set the animation on the eyes
@@ -60,22 +141,28 @@ void setEyeType(uint8_t eyeType) {
 }
 
 void eyeBlink() {
-  // new random interval for next blink (between 7 and 15 seconds)
-  intervalBlink = (random(7,15)*1000);
-  setEyeType(5);
-  delay(100);
-  setEyeType(nextIdleMovement);
+  // start blink
+  if (intervalBlink != 200) {
+    // Blink animation
+    setEyeType(5);
+    intervalBlink = 200;
+  } 
+  // Open eyes
+  else {
+    setEyeType(nextIdleMovementEyes);
+    intervalBlink = (random(7,15)*1000);
+  }  
 }
 
-void idleMovement() {
-  setEyeType(nextIdleMovement);
-  if (nextIdleMovement != 0) {
+void idleMovementEyes() {
+  setEyeType(nextIdleMovementEyes);
+  if (nextIdleMovementEyes != 0) {
     // The next idle movement will be normal eyes if it was different this time
-    nextIdleMovement = 0;
+    nextIdleMovementEyes = 0;
   } else {
     // Next idle movement will be random
-    nextIdleMovement = random(1, 6);
+    nextIdleMovementEyes = random(1, 6);
   }
   // Next idle movement interval will be between 5 and 15 seconds
-  intervalIdleEye = (random(2,5)*1000);
+  intervalIdleEyes = (random(2,5)*1000);
 }
