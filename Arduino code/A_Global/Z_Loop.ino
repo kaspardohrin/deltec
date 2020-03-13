@@ -5,25 +5,31 @@ void loop() {
    * move() <- move the robot in a direction
    */
   updateBody();
+  webSocket.loop();
 }
 
 void updateBody() {
   currentMillis = millis(); // Get current time
-  // Update eye animation
-  if (currentMillis - previousMillisIdleEyes >= intervalIdleEyes) {
-    previousMillisIdleEyes = currentMillis;
-    idleMovementEyes();
+  if (idleEyes) {
+    // Update eye animation
+    if (currentMillis - previousMillisIdleEyes >= intervalIdleEyes) {
+      previousMillisIdleEyes = currentMillis;
+      idleMovementEyes();
+    }
   }
-  // Update eye blink
-  if (currentMillis - previousMillisBlink >= intervalBlink) {
-    previousMillisBlink = currentMillis;
-    eyeBlink();
-  }
+
   // Update tail motion
   if (currentMillis - previousMillisIdleTail >= intervalIdleTail) {
     previousMillisIdleTail = currentMillis;
     idleMovementTail();
   }
+
+  // Update eye blink
+  if (currentMillis - previousMillisBlink >= intervalBlink) {
+    previousMillisBlink = currentMillis;
+    eyeBlink();
+  }
+  
   if (driving) {
     // Keep moving as long as the move is active
     if (currentMillis - previousMillisMovement >= intervalMovement) {

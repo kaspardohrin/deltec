@@ -85,6 +85,80 @@ const uint8_t EYE_8[] = {
   0x00
 };
 
+// Loading effects eyes
+/** _ - _ _
+ * _ _ _ _
+*/
+const uint8_t EYE_LOAD_1[] = {
+	0x00,
+	SEG_A,
+	0x00,
+  0x00
+};
+/** _ _ - _
+ * _ _ _ _
+*/
+const uint8_t EYE_LOAD_2[] = {
+	0x00,
+	0x00,
+	SEG_A,
+  0x00
+};
+/** _ _ | _
+ * _ _ _ _
+*/
+const uint8_t EYE_LOAD_3[] = {
+	0x00,
+	0x00,
+	SEG_B,
+  0x00
+};
+/** _ _ _ _
+ * _ _ | _
+*/
+const uint8_t EYE_LOAD_4[] = {
+	0x00,
+	0x00,
+	SEG_C,
+  0x00
+};
+/** _ _ _ _
+ * _ _ - _
+*/
+const uint8_t EYE_LOAD_5[] = {
+	0x00,
+	0x00,
+	SEG_D,
+  0x00
+};
+/** _ _ _ _
+ * _ - _ _
+*/
+const uint8_t EYE_LOAD_6[] = {
+	0x00,
+	SEG_D,
+	0x00,
+  0x00
+};
+/** _ _ _ _
+ * _ | _ _
+*/
+const uint8_t EYE_LOAD_7[] = {
+	0x00,
+	SEG_E,
+	0x00,
+  0x00
+};
+/** _ | _ _
+ * _ _ _ _
+*/
+const uint8_t EYE_LOAD_8[] = {
+	0x00,
+	SEG_F,
+	0x00,
+  0x00
+};
+
 /**
  * Set the animation on the eyes
  * @param eyeType Number representing the animation

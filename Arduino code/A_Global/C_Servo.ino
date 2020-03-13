@@ -22,7 +22,7 @@ void idleMovementTail() {
   if (wiggling) {
     // Happy mode
     wiggleTail();
-  } else {
+  } else if (idleTail) {
     // Set sail to angle
     tailServo.write(tailPositions[nextIdleMovementTail]);
     selectNextTailIdleMovevent();
