@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- JS Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <!-- Websocket Script -->
+    <!-- <script src="socket.js"></script> -->
+    <title>DelTec</title>
+</head>
+<body>
+    <div class="interface">
+        <ul class="list-unstyled">
+            <li class="list-inline-item"><button id="control" onclick="send('left')"><img src="./images/arrow-left.svg" alt="left-pointing arrow" />Move Left</button></li>
+            <li class="list-inline-item"><button id="control" onclick="send('angry')"><img src="./images/look-angry.svg" alt="angry-looking face" />Show Anger</button></li>
+            <li class="list-inline-item"><button id="control" onclick="send('excited')"><img src="./images/look-excited.svg" alt="look-excited face" />Show Happy</button></li>
+            <!-- <li className="list-inline-item"><button id="control" onclick="send('Wiggle')"><img src="./images/wiggle-tail.svg" alt="wiggling tail" />Wiggle Tail</button></li> -->
+            <li class="list-inline-item"><button id="control" onclick="send('right')"><img src="./images/arrow-right.svg" alt="right-pointing arrow" />Move Right</button></li>
+          </ul>
+    </div>
+</body>
+</html>
