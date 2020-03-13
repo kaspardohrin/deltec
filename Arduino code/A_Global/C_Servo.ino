@@ -57,7 +57,6 @@ void wiggleTail() {
       tailServo.write(100);
     }
     wiggleCount ++;
-    Serial.println(wiggleCount);
   } else {
     // Tail wiggle done start idle movement again
     wiggleCount = 0;

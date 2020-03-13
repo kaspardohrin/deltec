@@ -2,25 +2,38 @@ void loop() {
   /** Available calls:
    * wiggleTail(); <- single time action
    * updateBody(); <- main update caller
+   * move() <- move the robot in a direction
    */
   updateBody();
 }
 
 void updateBody() {
   currentMillis = millis(); // Get current time
-  // Should the eye idle animation change
+  // Update eye animation
   if (currentMillis - previousMillisIdleEyes >= intervalIdleEyes) {
     previousMillisIdleEyes = currentMillis;
     idleMovementEyes();
   }
-  // Should the eyes blink
+  // Update eye blink
   if (currentMillis - previousMillisBlink >= intervalBlink) {
     previousMillisBlink = currentMillis;
     eyeBlink();
   }
-  // Should the tail change idle position
+  // Update tail motion
   if (currentMillis - previousMillisIdleTail >= intervalIdleTail) {
     previousMillisIdleTail = currentMillis;
     idleMovementTail();
+  }
+  if (driving) {
+    // Keep moving as long as the move is active
+    if (currentMillis - previousMillisMovement >= intervalMovement) {
+      previousMillisMovement = currentMillis;
+      Serial.println("move");
+      move();
+    } else {
+      // Movement is done
+      moveDirection = IDLE;
+      move();
+    }
   }
 }
