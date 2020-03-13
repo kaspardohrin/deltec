@@ -34,8 +34,13 @@ void setup() {
   }
   WiFi.begin(ssid, password);
   while ( WiFi.status() != WL_CONNECTED ) {
-    Serial.print(".");
-    delay(500);
+    WiFiLoadAnimation();
+    loadingBar ++;
+    if (loadingBar > 7) {
+      loadingBar = 0;
+      Serial.print(".");
+    }
+    delay(100);
   }
   // Print our IP address
   Serial.println("Connected!");

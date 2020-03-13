@@ -241,3 +241,41 @@ void idleMovementEyes() {
   // Next idle movement interval will be between 5 and 15 seconds
   intervalIdleEyes = (random(2,5)*1000);
 }
+
+void WiFiLoadAnimation() {
+  switch (loadingBar)
+  {
+  case 0:
+    display_left.setSegments(EYE_LOAD_1);
+    display_right.setSegments(EYE_LOAD_1);
+    break;
+  case 1:
+    display_left.setSegments(EYE_LOAD_2);
+    display_right.setSegments(EYE_LOAD_2);
+    break;
+  case 2:
+    display_left.setSegments(EYE_LOAD_3);
+    display_right.setSegments(EYE_LOAD_3);
+    break;
+  case 3:
+    display_left.setSegments(EYE_LOAD_4);
+    display_right.setSegments(EYE_LOAD_4);
+    break;
+  case 4:
+    display_left.setSegments(EYE_LOAD_5);
+    display_right.setSegments(EYE_LOAD_5);
+    break;
+  case 5:
+    display_left.setSegments(EYE_LOAD_6);
+    display_right.setSegments(EYE_LOAD_6);
+    break;
+  case 6:
+    display_left.setSegments(EYE_LOAD_7);
+    display_right.setSegments(EYE_LOAD_7);
+    break;
+  case 7:
+    display_left.setSegments(EYE_LOAD_8);
+    display_right.setSegments(EYE_LOAD_8);
+    break;
+  }
+}

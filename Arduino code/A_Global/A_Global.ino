@@ -26,6 +26,7 @@ IPAddress primaryDNS(1, 1, 1, 1);   //optional
 IPAddress secondaryDNS(1, 0, 0, 1); //optional
 
 // Variables for main code
+uint8_t loadingBar = 0;                       // Used for loading effects
 bool idleEyes = true;                         // Should the eyes have changing random animations
 bool idleTail = true;                         // Should the tail have changing random animations
 
