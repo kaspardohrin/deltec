@@ -23,9 +23,6 @@ void setup() {
 
   // Test tail
   wiggleTail();
-  // test movement
-  moveDirection = LEFT;
-  driving = true;
 
   // Setup WiFi
   // Configures static IP address

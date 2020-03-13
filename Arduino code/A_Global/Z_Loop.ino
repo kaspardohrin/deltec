@@ -34,12 +34,8 @@ void updateBody() {
     // Keep moving as long as the move is active
     if (currentMillis - previousMillisMovement >= intervalMovement) {
       previousMillisMovement = currentMillis;
-      Serial.println("move");
       move();
-    } else {
-      // Movement is done
       moveDirection = IDLE;
-      move();
     }
   }
 }

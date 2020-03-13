@@ -48,7 +48,7 @@ uint8_t nextIdleMovementTail = 0;             // Next idle movement to do
 enum Direction { IDLE, FORWARD, LEFT, RIGHT, UNDEF};
 bool driving = false;                         // Should the robot move (value changed when recieving command via websocket)
 int moveDirection = IDLE;                     // Current move direction of the robot
-int moveDirectionPrevious = UNDEF;            // Previous move direction. Used for checking if the state should change, prevents unnecessary movement on motors
+int moveDirectionPrevious = IDLE;            // Previous move direction. Used for checking if the state should change, prevents unnecessary movement on motors
 
 WebSocketsServer webSocket = WebSocketsServer(port);
 
