@@ -14,5 +14,16 @@ void setup() {
 		tailServo.attach(SERVO_PIN, 1000, 2000); // Attach the servo after it has been detatched
 	}
   tailServo.write(0);
+
+  // Relay motor setup
+  pinMode(LEFT_MOTOR_RELAY_PIN, OUTPUT);
+  pinMode(RIGHT_MOTOR_RELAY_PIN, OUTPUT);
+  digitalWrite(LEFT_MOTOR_RELAY_PIN, HIGH);
+  digitalWrite(RIGHT_MOTOR_RELAY_PIN, HIGH);
+
+  // Test tail
   wiggleTail();
+  // test movement
+  moveDirection = LEFT;
+  driving = true;
 }
