@@ -1,27 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- JS Libraries -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
     <!-- Websocket Script -->
     <!-- <script src="socket.js"></script> -->
     <title>DelTec</title>
 </head>
+
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="./images/deltec.png" width="30.5" height="30.5" alt="deltec">
+            DelTec
+        </a>
+        <ul class="list-unstyled">
+            <li class="list-inline-item">
+                <a class="nav-link" href="#">One pager</a>
+            </li>
+            <li class="list-inline-item">
+                <a class="nav-link" href="#">Control pannel</a>
+            </li>
+        </ul>
+    </nav>
+
     <div class="interface">
         <ul class="list-unstyled">
-            <li class="list-inline-item"><button id="control" onclick="send('left')"><img src="./images/arrow-left.svg" alt="left-pointing arrow" />Move Left</button></li>
-            <li class="list-inline-item"><button id="control" onclick="send('angry')"><img src="./images/look-angry.svg" alt="angry-looking face" />Show Anger</button></li>
-            <li class="list-inline-item"><button id="control" onclick="send('excited')"><img src="./images/look-excited.svg" alt="look-excited face" />Show Happy</button></li>
+            <li class="list-inline-item"><button id="control" onclick="send('left')"><img src="./images/arrow-left.svg"
+                        alt="left-pointing arrow" />Move Left</button></li>
+            <li class="list-inline-item"><button id="control" onclick="send('angry')"><img src="./images/look-angry.svg"
+                        alt="angry-looking face" />Show Anger</button></li>
+            <li class="list-inline-item"><button id="control" onclick="send('excited')"><img
+                        src="./images/look-excited.svg" alt="look-excited face" />Show Happy</button></li>
             <!-- <li className="list-inline-item"><button id="control" onclick="send('Wiggle')"><img src="./images/wiggle-tail.svg" alt="wiggling tail" />Wiggle Tail</button></li> -->
-            <li class="list-inline-item"><button id="control" onclick="send('right')"><img src="./images/arrow-right.svg" alt="right-pointing arrow" />Move Right</button></li>
-          </ul>
+            <li class="list-inline-item"><button id="control" onclick="send('right')"><img
+                        src="./images/arrow-right.svg" alt="right-pointing arrow" />Move Right</button></li>
+        </ul>
     </div>
 </body>
+
 </html>
