@@ -2,7 +2,6 @@
 TM1637Display display_left(SEGMENT_CLK, SEGMENT_1_DIN);
 TM1637Display display_right(SEGMENT_CLK, SEGMENT_2_DIN);
 
-
 /** o _ _ _
  * _ _ _ _
 */
@@ -226,7 +225,7 @@ void eyeBlink() {
     setEyeType(nextIdleMovementEyes);
     // Set blink interval for next blink
     intervalBlink = (random(10,15)*1000);
-  }  
+  }
 }
 
 void idleMovementEyes() {

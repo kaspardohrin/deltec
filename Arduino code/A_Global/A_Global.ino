@@ -17,9 +17,9 @@
 // const char* password = "Pass here";
 const char* ssid = "Arvex_Fiber_2G";          // Wifi name
 const char* password = "Kluitenruif@25";      // Wifi password
-const uint16_t port = 1338;                   // Ip port
+const uint16_t port = 1337;                   // Ip port
 // Static ip
-IPAddress local_IP(192, 168, 1, 207);
+IPAddress local_IP(192, 168, 1, 205);
 IPAddress gateway(192, 168, 1, 1);
 IPAddress subnet(255, 255, 255, 0);
 IPAddress primaryDNS(1, 1, 1, 1);   //optional
