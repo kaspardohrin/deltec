@@ -1,1 +1,5 @@
-This is the folder to create our one-pager code.
+This is our onepager.
+
+Made with the help of:
+- Materialize
+- JQuery
