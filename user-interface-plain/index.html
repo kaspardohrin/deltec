@@ -29,28 +29,61 @@
             <img src="./images/deltec.png" width="30.5" height="30.5" alt="deltec">
             DelTec
         </a>
-        <ul class="list-unstyled">
-            <li class="list-inline-item">
-                <a class="nav-link" href="#">One pager</a>
-            </li>
-            <li class="list-inline-item">
-                <a class="nav-link" href="#">Control pannel</a>
-            </li>
-        </ul>
     </nav>
 
+    <iframe allow src="" name="video-call" scrolling="no" style="min-width: 400px; min-height: 500px; width: 100%;"></iframe>
+
     <div class="interface">
-        <ul class="list-unstyled">
-            <li class="list-inline-item"><button id="control" onclick="send('left')"><img src="./images/arrow-left.svg"
-                        alt="left-pointing arrow" />Move Left</button></li>
-            <li class="list-inline-item"><button id="control" onclick="send('angry')"><img src="./images/look-angry.svg"
-                        alt="angry-looking face" />Show Anger</button></li>
-            <li class="list-inline-item"><button id="control" onclick="send('excited')"><img
-                        src="./images/look-excited.svg" alt="look-excited face" />Show Happy</button></li>
-            <!-- <li className="list-inline-item"><button id="control" onclick="send('Wiggle')"><img src="./images/wiggle-tail.svg" alt="wiggling tail" />Wiggle Tail</button></li> -->
-            <li class="list-inline-item"><button id="control" onclick="send('right')"><img
-                        src="./images/arrow-right.svg" alt="right-pointing arrow" />Move Right</button></li>
-        </ul>
+        <div class="emotes" style="border: 1px solid black;">Emotes
+            <ul class="list-unstyled">
+                <li class="list-inline-item"><abbr title="Pressing this button will make the robot look neutral"><button id="control" onclick="send('eyes_normal')"><img
+                            src="./images/look-normal.png" alt="look-normal face" />Normal</button></abbr></li>
+
+                <li class="list-inline-item"><abbr title="Pressing this button will make the robot appear happy!"><button id="control" onclick="send('eyes_happy')"><img
+                            src="./images/look-excited.png" alt="look-excited face" />Happy</button></abbr></li>
+
+                <li class="list-inline-item"><abbr title="Pressing this button will make the robot appear suprised!"><button id="control" onclick="send('eyes_suprised')"><img
+                            src="./images/look-suprised.png" alt="look-suprised face" />Suprised</button></abbr></li>
+
+                <li class="list-inline-item"><abbr title="Pressing this button will make the robot appear confused!"><button id="control" onclick="send('eyes_cross')"><img
+                            src="./images/look-confused.png" alt="look-confused face" />Confused</button></abbr></li>
+
+                <li class="list-inline-item"><abbr title="Pressing this button will make the robot look down!"><button id="control" onclick="send('eyes_down')"><img
+                            src="./images/look-down.png" alt="look-down eyes" />Down</button></abbr></li>
+
+                <li class="list-inline-item"><abbr title="Pressing this button will make the robot look right!"><button id="control" onclick="send('eyes_right')"><img
+                            src="./images/look-right.png" alt="look-right eyes" />Right</button></abbr></li>
+
+                <li class="list-inline-item"><abbr title="Pressing this button will make the robot look left!"><button id="control" onclick="send('eyes_left')"><img
+                            src="./images/look-left.png" alt="look-left eyes" />Left</button></abbr></li>
+            </ul>
+        </div>
+
+        <div class="controls" style="border: 1px solid black;">Controls
+            <ul class="list-unstyled">
+                <li class="list-inline-item"><abbr title="Pressing this button will make the robot turn to the left"><button id="control" onclick="send('left')"><img
+                            src="./images/arrow-left.svg" alt="left-pointing arrow" />Move Left</button></abbr></li>
+
+                <li class="list-inline-item"><abbr title="Pressing this button will make the robot move forwards"><button id="control" onclick="send('forward')"><img
+                            src="./images/arrow-forward.png" alt="right-pointing arrow" />Move Forward</button></abbr></li>
+
+                <li class="list-inline-item"><abbr title="Pressing this button will make the robot turn to the right"><button id="control" onclick="send('right')"><img
+                            src="./images/arrow-right.svg" alt="right-pointing arrow" />Move Right</button></abbr></li>
+            </ul>
+        </div>
+
+        <div class="toggles" style="border: 1px solid black;">Toggles
+            <ul class="list-unstyled">
+                <li class="list-inline-item"><abbr title="Pressing this button will make the tail of the robot swing!"><button id="control" onclick="send('wiggle')"><img
+                            src="./images/wiggle-tail.svg" alt="dog" />Wiggle Tail</button></abbr></li>
+                    
+                <li class="list-inline-item"><abbr title="Switch between randomly moving tail or an idle tail"><button id="control" onclick="send('idle_tail_toggle')"><img
+                            src="./images/toggle-tail.svg" alt="dog" />Toggle Tail</button></abbr></li>
+
+                <li class="list-inline-item"><abbr title="Switch between idling eyes and randomly moving eyes"><button id="control" onclick="send('idle_eyes_toggle')"><img
+                            src="./images/toggle-eyes.svg" alt="eyes" />Toggle Idle</button></abbr></li>
+            </ul>
+        </div>
     </div>
 </body>
 

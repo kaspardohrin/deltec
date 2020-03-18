@@ -8,22 +8,28 @@ body {
   background: #ededed;
 }
 
- .navbar ul  {
+.navbar ul  {
   margin-bottom: 0px;
 }
 
-/* .navbar ul li a {
-  display: flex;
-  flex-direction: column;
-  align-items: right;
-  margin-top: 9px;
-} */
-
-.interface {
-  display: flex;
-  flex-direction: column;
+.interface > .emotes, .interface > .controls, .interface > .toggles {
+  width: calc(50% - 10%);
+  display: inline-block;
   align-items: center;
-  margin-top: 25px;
+  flex-direction: column;
+  margin: 0%
+}
+
+.interface > .emotes > ul, .interface > .controls > ul, .interface > .toggles > ul {
+  align-self: center;
+  margin: 10px;
+}
+
+.interface > .emotes > ul > li, .interface > .controls > ul > li, .interface > .toggles > ul > li {
+  margin: 5px;
+  display: flex;
+  align-self: center;
+  /* flex-direction: column; */
 }
 
 .interface ul li img {
