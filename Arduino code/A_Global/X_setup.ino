@@ -23,7 +23,28 @@ void setup() {
 
   // Test tail
   wiggleTail();
-  // test movement
-  moveDirection = LEFT;
-  driving = true;
+
+  // Setup WiFi
+  // Configures static IP address
+  if (!WiFi.config(local_IP, gateway, subnet, primaryDNS, secondaryDNS)) {
+    Serial.println("STA Failed to configure");
+  }
+  WiFi.begin(ssid, password);
+  while ( WiFi.status() != WL_CONNECTED ) {
+    WiFiLoadAnimation();
+    loadingBar ++;
+    if (loadingBar > 7) {
+      loadingBar = 0;
+      Serial.print(".");
+    }
+    delay(100);
+  }
+  // Print our IP address
+  Serial.println("Connected!");
+  Serial.print("My IP address: ");
+  Serial.println(WiFi.localIP());
+
+  // Start WebSocket server and assign callback
+  webSocket.begin();
+  webSocket.onEvent(onWebSocketEvent);
 }
