@@ -2,7 +2,6 @@
 TM1637Display display_left(SEGMENT_CLK, SEGMENT_1_DIN);
 TM1637Display display_right(SEGMENT_CLK, SEGMENT_2_DIN);
 
-
 /** o _ _ _
  * _ _ _ _
 */
@@ -85,6 +84,80 @@ const uint8_t EYE_8[] = {
   0x00
 };
 
+// Loading effects eyes
+/** _ - _ _
+ * _ _ _ _
+*/
+const uint8_t EYE_LOAD_1[] = {
+	0x00,
+	SEG_A,
+	0x00,
+  0x00
+};
+/** _ _ - _
+ * _ _ _ _
+*/
+const uint8_t EYE_LOAD_2[] = {
+	0x00,
+	0x00,
+	SEG_A,
+  0x00
+};
+/** _ _ | _
+ * _ _ _ _
+*/
+const uint8_t EYE_LOAD_3[] = {
+	0x00,
+	0x00,
+	SEG_B,
+  0x00
+};
+/** _ _ _ _
+ * _ _ | _
+*/
+const uint8_t EYE_LOAD_4[] = {
+	0x00,
+	0x00,
+	SEG_C,
+  0x00
+};
+/** _ _ _ _
+ * _ _ - _
+*/
+const uint8_t EYE_LOAD_5[] = {
+	0x00,
+	0x00,
+	SEG_D,
+  0x00
+};
+/** _ _ _ _
+ * _ - _ _
+*/
+const uint8_t EYE_LOAD_6[] = {
+	0x00,
+	SEG_D,
+	0x00,
+  0x00
+};
+/** _ _ _ _
+ * _ | _ _
+*/
+const uint8_t EYE_LOAD_7[] = {
+	0x00,
+	SEG_E,
+	0x00,
+  0x00
+};
+/** _ | _ _
+ * _ _ _ _
+*/
+const uint8_t EYE_LOAD_8[] = {
+	0x00,
+	SEG_F,
+	0x00,
+  0x00
+};
+
 /**
  * Set the animation on the eyes
  * @param eyeType Number representing the animation
@@ -152,7 +225,7 @@ void eyeBlink() {
     setEyeType(nextIdleMovementEyes);
     // Set blink interval for next blink
     intervalBlink = (random(10,15)*1000);
-  }  
+  }
 }
 
 void idleMovementEyes() {
@@ -166,4 +239,42 @@ void idleMovementEyes() {
   }
   // Next idle movement interval will be between 5 and 15 seconds
   intervalIdleEyes = (random(2,5)*1000);
+}
+
+void WiFiLoadAnimation() {
+  switch (loadingBar)
+  {
+  case 0:
+    display_left.setSegments(EYE_LOAD_1);
+    display_right.setSegments(EYE_LOAD_1);
+    break;
+  case 1:
+    display_left.setSegments(EYE_LOAD_2);
+    display_right.setSegments(EYE_LOAD_2);
+    break;
+  case 2:
+    display_left.setSegments(EYE_LOAD_3);
+    display_right.setSegments(EYE_LOAD_3);
+    break;
+  case 3:
+    display_left.setSegments(EYE_LOAD_4);
+    display_right.setSegments(EYE_LOAD_4);
+    break;
+  case 4:
+    display_left.setSegments(EYE_LOAD_5);
+    display_right.setSegments(EYE_LOAD_5);
+    break;
+  case 5:
+    display_left.setSegments(EYE_LOAD_6);
+    display_right.setSegments(EYE_LOAD_6);
+    break;
+  case 6:
+    display_left.setSegments(EYE_LOAD_7);
+    display_right.setSegments(EYE_LOAD_7);
+    break;
+  case 7:
+    display_left.setSegments(EYE_LOAD_8);
+    display_right.setSegments(EYE_LOAD_8);
+    break;
+  }
 }
