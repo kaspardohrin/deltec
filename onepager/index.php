@@ -13,120 +13,370 @@ include_once 'includes/head.html'
 
     <!-- content -->
     <main>
-        <!-- Picture -->
-        <div class="image_large">
-            <img class="responsive-img" alt="" src="images/banner.jpg">
-        </div>
-
+        <!-- Spacer -->
+        <div class="large_spacer green1background"></div>
         <!-- Welkom -->
-        <div class="row">
-            <div class="col s12 m10 l8 offset-m1 offset-l2">
-                <div class="col s12 m3 l5 center-align">
+        <div class="row green1background">
+            <!-- Background picture -->
+            <div class="row center">
+                <div class="col s4 offset-s4">
                     <!-- Picture -->
-                    <img class="responsive-img" style="max-height: 400px;" alt="" src="images/logos/Deltec_UHD_transparant.png">
+                    <img class="responsive-img" style="max-height: 400px;" alt="" src="images/logos/Deltec_low_transparant.png">
                 </div>
-                <div class="col s12 m9 l7">
-                    <!-- Text -->
-                    <h4>Deltec robot</h4>
-                    <br>
-                    <p>Lorem ipsum you know the drill.
-                    </p>
-                    <br>
-                    <p>Bla bla bla bla
-                    </p>
+            </div>
+            <div class="row">
+                <div class="col s6 offset-s3 center">
+                    <!-- Slogan -->
+                    <h4>- Voor en door studenten -</h4>
                 </div>
             </div>
         </div>
 
-        <!-- Mogelijkheden -->
-        <div class="row z-depth-1 homebar blue1background">
-            <div class="col s10 offset-s1 center-align">
-                <h2>Mogelijkheden</h2>
+        <!-- Missie -->
+        <div class="row z-depth-1">
+            <div class="col s8 offset-s2 center">
+                <h1>MISSIE:</h1>
+                <h4>Bouw de ultieme telepresence robot voor studenten die ziek thuiszitten
+                Jouw persoonlijkheid in jouw klas.</h4>
             </div>
-            <div class="col s10 offset-s1 center-align">
+        </div>
+
+        <!-- Het team -->
+        <div class="row z-depth-1 homebar blue1background">
+            <div class="col s10 offset-s1">
+                <h2>HET TEAM</h2>
+                <p>
+                    Wij zijn studenten van verschillende opleidingen op de Hogeschool Rotterdam. <br>
+                    En met ons multidisciplinaire team bouwen wij aan de beste telepresence robot voor studenten die de wereld ooit heeft gezien.</p>
+            </div>
+            <div class="col s10 offset-s1">
                 <div class="row grey lighten-4">
                     <div class="col s12 m3 z-depth-1 infobox">
-                        <h5>Communiceer</h5>
-                        <img class="responsive-img" src="images/Mill_Type2_CNC.svg">
-                        <h6>Tweewegs communicatie met beeld en geluid</h6>
+                        <h5 class="bold">Roel <br>Versteeg</h5>
+                        <img class="responsive-img" src="images/Roel.jpg">
+                        <p>
+                            <strong>Opleiding</strong><br>
+                            Creative Media and Game Technologies<br>
+                            <br>
+                            <strong>Rol</strong><br>
+                            Programmeur back-end | Hardware<br>
+                            <br>
+                            <strong>Contact</strong><br>
+                            0940512@hr.nl<br>
+                        </p>
                     </div>
                     <div class="col s12 m3 z-depth-1 infobox">
-                        <h5>Bestuur</h5>
-                        <img class="responsive-img" src="images/Mill_Type2_Graveren.svg">
-                        <h6>Controleer de robot via de app</h6>
+                        <h5 class="bold">Kaspar <br>Dohrin</h5>
+                        <img class="responsive-img" src="images/Kaspar.jpg">
+                        <p>
+                            <strong>Opleiding</strong><br>
+                            Creative Media and Game Technologies<br>
+                            <br>
+                            <strong>Rol</strong><br>
+                            Programmeur front-end | UI design<br>
+                            <br>
+                            <strong>Contact</strong><br>
+                            0882916@hr.nl<br>
+                        </p>
                     </div>
                     <div class="col s12 m3 z-depth-1 infobox">
-                        <h5>Deel</h5>
-                        <img class="responsive-img" src="images/Mill_Type2_Laser.svg">
-                        <h6>Deel gemakkelijk je scherm en je werk</h6>
+                        <h5 class="bold">Alicia <br>Smallenbroek</h5>
+                        <img class="responsive-img" src="images/Alto.jpg">
+                        <p>
+                            <strong>Opleiding</strong><br>
+                            Communicatie en multimedia design.<br>
+                            <br>
+                            <strong>Rol</strong><br>
+                            Onderzoeker | Ontwerper | Tester<br>
+                            <br>
+                            <strong>Contact</strong><br>
+                            0934024@hr.nl<br>
+                        </p>
                     </div>
                     <div class="col s12 m3 z-depth-1 infobox">
-                        <h5>Emotie</h5>
-                        <img class="responsive-img" src="images/PCB.svg">
-                        <h6>Projecteer jouw emoties op de robot</h6>
+                        <h5 class="bold">Charissa  <br>van Werkhooven</h5>
+                        <img class="responsive-img" src="images/Charissa.jpg">
+                        <p>
+                            <strong>Opleiding</strong><br>
+                            Communicatie<br>
+                            <br>
+                            <strong>Rol</strong><br>
+                            Onderzoek | Designer<br>
+                            <br>
+                            <strong>Contact</strong><br>
+                            0823930@hr.nl<br>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Historie info -->
-        <div class="row z-depth-1 homebar valign-wrapper">
-            <div class="col s8 offset-s2 ">
-                <div class="col s8">
-                    <h5>Tiel</h5>
-                    <h6 class="grey-text text-darken-3">
-                        Hier kan een stukje over bijvoobeeld de historie staan van dit project.<br><br>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                        It has survived not only five centuries, but also the leap into electronic typesetting, 
-                        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-                        and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    </h6>
+
+        <!-- Informatie -->
+        <div class="row">
+            <div class="large_spacer"></div>
+            <div class="col s10 offset-s1 center">
+                <h2>ONDERZOEK</h2>
+                <h5>Resultaten</h5>
+            </div>
+            <!-- Prototype -->
+            <div class="row">
+                <div class="col s5 offset-s1">
+                    <h4>PROTOTYPE #1</h4>
+                    <p>
+                        Als team hebben we voor ons zelf een hypothese opgesteld voordat we gingen testen. 
+                        Deze hypothese was “Ik geloof dat de gebruiker behoefte heeft aan een gepersonaliseerde robot die voor de gebruiker op locatie kan zijn wanneer de gebruiker dat zelf niet kan”.<br>
+                        Uit het onderzoek en het testen hebben we dan ook ondervonden dat deze hypothese in de werkelijk echter zo is. 
+                        De personen die we hadden getest vielen ook echter in de doelgroep waardoor de test zeer concreet kon gebeuren. 
+                        Het was dan ook zo dat de testpersonen allemaal hebben benoemd dat ze graag iets persoonlijks zouden willen gebruiken dat hun situatie makkelijker kan maken en op een manier ook leuker. 
+                        Als team konden we dan ook vaststellen dat we de goeie kant op gingen met ons concept.
+                    </p>
                 </div>
-                <div class="col s4 center-align">
-                    <!-- Picture -->
-                    <img class="responsive-img" style="max-height: 300px;" alt="" src="images/logos/Deltec_UHD_transparant.png">
+                <div class="col s4 offset-s1 center">
+                    <!-- Image -->
+                    <img class="responsive-img" style="max-height: 400px;" alt="" src="images/Robot_design_1.png">
+                </div>
+            </div>
+            <!-- Style guide -->
+            <div class="row">
+                <div class="col s4 offset-s1 center">
+                    <!-- Image -->
+                    <img class="responsive-img" style="max-height: 400px;" alt="" src="images/Styleguide.png">
+                </div>
+                <div class="col s5 offset-s1">
+                    <h4 class="right-align">STYLE GUIDE</h4>
+                    <p>
+                        Als team vroegen we ons af welke kleuren en fonts en andere stijlen onze doelgroep aantrekkelijk vind en zou willen hebben in ons concept. 
+                        We moesten dus een style guide gaan opstellen. <br>
+                        Om dit te ontdekken hebben we eerst onderzoek gedaan naar stijlen die we kunnen gebruiken en stijlen die ook in de zorg omgeving vaker voorkomen. 
+                        Doormiddel van dat onderzoek konden we een enquête opstellen om deze vraag beantwoord te krijgen. 
+                        Dit is ons dan ook gelukt, vanuit de enquête hebben we een style guide kunnen ontwerpen voor onze One pager maar ook voor ons concept.
+                        We kunnen dan vaststellen dat de doelgroep gelukkig word wanneer de doelgroep ons product en website ziet.
+                    </p>
+                </div>
+            </div>
+            <!-- Logo -->
+            <div class="row">
+                <div class="col s5 offset-s1">
+                    <h4>LOGO</h4>
+                    <p>
+                        Een logo is belangrijk, zo word je als bedrijf en product herkent. 
+                        Het was dus ook belangrijk voor ons dat we onze logo’s bij de doelgroep gingen testen,
+                        Dit hebben we dan ook gedaan.<br>
+                        Als team zijn we samen logo’s gaan ontwerpen en zijn we met deze schetsen naar de doelgroep gegaan. 
+                        De doelgroep had hele duidelijke meningen over deze logo’s hierdoor konden we goed verder met de feedback die we hadden ontvangen. 
+                        Het was zeer duidelijk voor ons dat de groep van iets simpels houd en het liefst ook in een kleur, we hebben dit dan ook aan de doelgroep geleverd.
+                    </p>
+                </div>
+                <div class="col s4 offset-s1 center">
+                    <!-- Image -->
+                    <img class="responsive-img" style="max-height: 400px;" alt="" src="images/logos/Deltec_medium_transparant.png">
+                </div>
+            </div>
+            <!-- Personas -->
+            <div class="row">                
+                <div class="col s4 offset-s1 center">
+                    <!-- Image -->
+                    <img class="responsive-img" style="max-height: 400px;" alt="" src="images/Personas.png">
+                </div>
+                <div class="col s5 offset-s1">
+                    <h4 class="right-align">PERSONAS</h4>
+                    <p>
+                        Om de doelgroep beter te leren kennen hebben we de doelgroep geïnterviewd en daaruit 2 persona’s kunnen ontwerpen. 
+                        Doordat we de doelgroep op papier voor onszelf konden neerzetten was het ook heel makkelijk om de doelgroep altijd in ons achterhoofd te houden. 
+                        Niet eens een keuze werd gemaakt zonder de doelgroep te betrekken, 
+                        ons product is gemaakt voor hun dus we wilden hun alles geven waar ze behoeften aan hadden. 
+                        Doormiddel van deze keuze hebben we de doelgroep onze missie succesvol kunnen leveren.
+                    </p>
+                </div>
+            </div>
+
+
+
+            <!-- Gedeelte van Charissa -->
+            <div class="row">
+                <div class="col s5 offset-s1">
+                    <h4>TEKST VAN CHARISSA HIER</h4>
+                    <p>
+                        Ik verwacht nog een kort stukje tekst wat hier kan komen in hoofstukken wat jij hebt geleverd.
+                        De lengte is ongeveer hetzelfde als de voorgaande 4 onderdelen van Alto.
+                    </p>
+                </div>
+                <div class="col s4 offset-s1 center">
+                    <!-- Image -->
+                    <img class="responsive-img" style="max-height: 400px;" alt="" src="images/logos/Deltec_medium_transparant.png">
+                </div>
+            </div>
+            <!-- Style guide -->
+            <div class="row">
+                <div class="col s4 offset-s1 center">
+                    <!-- Image -->
+                    <img class="responsive-img" style="max-height: 400px;" alt="" src="images/logos/Deltec_medium_transparant.png">
+                </div>
+                <div class="col s5 offset-s1">
+                    <h4 class="right-align">TEKST VAN CHARISSA HIER</h4>
+                    <p>
+                        Ik verwacht nog een kort stukje tekst wat hier kan komen in hoofstukken wat jij hebt geleverd.<br>
+                        De lengte is ongeveer hetzelfde als de voorgaande 4 onderdelen van Alto.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s5 offset-s1">
+                    <h4>TEKST VAN CHARISSA HIER</h4>
+                    <p>
+                        Ik verwacht nog een kort stukje tekst wat hier kan komen in hoofstukken wat jij hebt geleverd.
+                        De lengte is ongeveer hetzelfde als de voorgaande 4 onderdelen van Alto.
+                    </p>
+                </div>
+                <div class="col s4 offset-s1 center">
+                    <!-- Image -->
+                    <img class="responsive-img" style="max-height: 400px;" alt="" src="images/logos/Deltec_medium_transparant.png">
+                </div>
+            </div>
+            <!-- Style guide -->
+            <div class="row">
+                <div class="col s4 offset-s1 center">
+                    <!-- Image -->
+                    <img class="responsive-img" style="max-height: 400px;" alt="" src="images/logos/Deltec_medium_transparant.png">
+                </div>
+                <div class="col s5 offset-s1">
+                    <h4 class="right-align">TEKST VAN CHARISSA HIER</h4>
+                    <p>
+                        Ik verwacht nog een kort stukje tekst wat hier kan komen in hoofstukken wat jij hebt geleverd.<br>
+                        De lengte is ongeveer hetzelfde als de voorgaande 4 onderdelen van Alto.
+                    </p>
                 </div>
             </div>
         </div>
-        <!-- Info -->
-        <div class="row z-depth-1 homebar blue2background">
+
+        <!-- Concept -->
+        <div class="row yellow1background">
+            <div class="col s10 offset-s1">
+                <div class="row">
+                    <div class="col s6">
+                        <h2>ONTMOET ...</h2>
+                        <p>
+                            <strong>Henry | Bas | Jolien | Kevin | Lisa | ...</strong><br>
+                            Ja de robot heeft zelf geen naam, die verzin jij namelijk!<br>
+                            <br>
+                            <strong>Functies</strong><br>
+                            - Tweewegs audio en video Communicatie<br>
+                            - Scherm delen optie<br>
+                            - Emoties tonen via ogen en kwispel staart<br>
+                            - Afstandsbestuurbaar om de hele klas te zien.<br>
+                            <br>
+                        </p>
+                    </div>
+                    <div class="col s3 center">
+                        <!-- Image -->
+                        <img class="responsive-img" style="max-height: 400px;" alt="" src="images/Robot_design_1.png">
+                    </div>
+                    <div class="col s3 center">
+                        <!-- Image -->
+                        <img class="responsive-img" style="max-height: 400px;" alt="" src="images/Exploded.png">
+                    </div>
+                    <div class="col s12">
+                        <p>
+                            <strong>Modulariteit</strong><br>
+                            De robot is zo ontworpen dat een gebruiker gemakkelijk onderdelen kan vervangen.<br>
+                            Zo kun je gemakkelijk de robot personaliseren door andere vormen staartjes te monteren of de oog-modules te vervangen voor modules met een andere kleur.<br>
+                            Naast de cosmetische onderdelen kun je ook gemakkelijk de hardware vervangen aan de binnenkant van de robot wanneer deze bijvoorbeeld defect is. <br>
+                            Bestel simpelweg een vervangend onderdeel zoals het besturing computer, klik de kapotte module los en plaats de nieuwe module. het is zo simpel als een lamp vervangen!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- UI -->
+        <div class="row blue1background">
+            <div class="col s10 offset-s1">
+                <div class="row">
+                    <div class="col s6 center">
+                        <div class="large_spacer"></div>
+                        <!-- Image -->
+                        <img class="responsive-img" style="max-height: 400px;" alt="" src="images/Ui.png">
+                    </div>
+                    <div class="col s6">
+                        <h2>BEDIENING</h2>
+                        <p>
+                            De Deltec robot dient als koppeling tussen thuisstudent en klaslokaal en als koppeling tussen klaslokaal en thuisstudent. 
+                            Maar hoe komt deze koppeling tot stand. 
+                            En hoe is het probleem opgelost signalen van de robot naar het klaslokaal overeen te laten komen met wat de thuisstudent, die op momenten niet eens zichtbaar is, bedoeld en voelt.<br>
+                            <br>
+                            <strong>Setup</strong><br>
+                            In de klas wordt de robot neergezet. Vervolgens open de student die de robot vanuit huis bestuurd de app op een device naar keuze.<br>
+                            De student kan vervolgens de robot besturen en de les volgen.<br>
+                            <br>
+                            <strong>Controlepaneel</strong><br>
+                            Het controlepaneel bestaat uit knoppen, met afbeeldingen, die zijn afgestemd op de meest gewilde functionaliteiten die voortkomen uit onze onderzoeken.
+                        </p>
+                    </div>
+                    
+                    <div class="col s12">
+                        <p>
+                            <strong></strong><br>
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Verkoop opties -->
+        <div class="row z-depth-1 homebar blue1background">
             <div class="col s10 offset-s1 center-align">
-                <h2>TITEL</h2>
+                <h2>UITVOERINGEN</h2>
             </div>
             <div class="col s10 offset-s1 center-align">
                 <div class="row grey lighten-4">
                     <div class="col s4 z-depth-1 infobox center-align">
-                        <h5>Info titel</h5>
-                        <img class="responsive-img circle" style="max-height: 300px;" src="images/logos/Deltec_alt_UHD_transparant.png">
-                        <h6>Uitleg wat dit is in 1 zin</h6>
+                        <h5>Basis model</h5>
+                        <img class="responsive-img" style="max-height: 300px;" src="images/Robot_design_1.png">
+                        <h6>Alles wat je nodig hebt om te studeren op afstand</h6>
+                        <p class="bold">€50,-</p>
                     </div>
                     <div class="col s4 z-depth-1 infobox">
-                        <h5>Info titel</h5>
-                        <img class="responsive-img circle" style="max-height: 300px;" src="images/logos/Deltec_alt_UHD_transparant.png">
-                        <h6>Uitleg wat dit is in 1 zin</h6>
+                        <h5>Accesoires pakket</h5>
+                        <img class="responsive-img" style="max-height: 300px;" src="images/Accesoires.png">
+                        <h6>Wil je de robot personaliseren, bestel dan dit pakket</h6>
+                        <p class="bold">€15,-</p>
                     </div>
                     <div class="col s4 z-depth-1 infobox">
-                        <h5>Info titel</h5>
-                        <img class="responsive-img circle" style="max-height: 300px;" src="images/logos/Deltec_alt_UHD_transparant.png">
-                        <h6>Uitleg wat dit is in 1 zin</h6>
+                        <h5>Collectors editie</h5>
+                        <img class="responsive-img" style="max-height: 300px;" src="images/Robot_design_2.png">
+                        <h6>Ontvang het basis model met alle beschikbare accesoires</h6>
+                        <p class="bold">€100,-</p>
                     </div>
                 </div>
+                <h4>Vervangende onderdelen</h4>
                 <div class="row grey lighten-4">
-                    <div class="col s4 z-depth-1 infobox">
-                        <h5>Info titel</h5>
-                        <img class="responsive-img circle" style="max-height: 300px;" src="images/logos/Deltec_alt_UHD_transparant.png">
-                        <h6>Uitleg wat dit is in 1 zin</h6>
+                    <div class="col s4 z-depth-1 infobox center-align">
+                        <h5>Vervangende aansturing module</h5>
+                        <img class="responsive-img" style="max-height: 300px;" src="images/onderdelen/ESP32.png">
+                        <p>
+                            Is de aansturing kapot? <br>
+                            Geen probleem, bestel nu een nieuwe en vervang hem gemakkelijk zelf.
+                        </p>
+                        <p class="bold">€15,-</p>
                     </div>
                     <div class="col s4 z-depth-1 infobox">
-                        <h5>Info titel</h5>
-                        <img class="responsive-img circle" style="max-height: 300px;" src="images/logos/Deltec_alt_UHD_transparant.png">
-                        <h6>Uitleg wat dit is in 1 zin</h6>
+                        <h5>Vervangende staart servo module</h5>
+                        <img class="responsive-img" style="max-height: 300px;" src="images/onderdelen/Servo.jpg">
+                        <p>
+                            Is de staart beweging kapot? <br>
+                            Geen probleem, bestel nu een nieuwe en vervang hem gemakkelijk zelf.
+                        </p>
+                        <p class="bold">€5,-</p>
                     </div>
                     <div class="col s4 z-depth-1 infobox">
-                        <h5>Info titel</h5>
-                        <img class="responsive-img circle" style="max-height: 300px;" src="images/logos/Deltec_alt_UHD_transparant.png">
-                        <h6>Uitleg wat dit is in 1 zin</h6>
+                        <h5>Vervangend oog</h5>
+                        <img class="responsive-img" style="max-height: 300px;" src="images/onderdelen/7-segment.jpg">
+                        <p>
+                            Is een oog module kapot?<br>
+                            Geen probleem, bestel nu een nieuwe en vervang hem gemakkelijk zelf.
+                        </p>
+                        <p class="bold">€7,50</p>
                     </div>
                 </div>
             </div>
