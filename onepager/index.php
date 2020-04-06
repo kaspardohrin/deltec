@@ -36,8 +36,7 @@ include_once 'includes/head.html'
         <div class="row z-depth-1">
             <div class="col s8 offset-s2 center">
                 <h1>MISSIE:</h1>
-                <h4>Bouw de ultieme telepresence robot voor studenten die ziek thuiszitten
-                Jouw persoonlijkheid in jouw klas.</h4>
+                <h4>Jouw persoonlijkheid in jouw klas.</h4>
             </div>
         </div>
 
@@ -50,10 +49,12 @@ include_once 'includes/head.html'
                     En met ons multidisciplinaire team bouwen wij aan de beste telepresence robot voor studenten die de wereld ooit heeft gezien.</p>
             </div>
             <div class="col s10 offset-s1">
-                <div class="row grey lighten-4">
+                <div class="infobox_holder row grey lighten-4">
                     <div class="col s12 m3 z-depth-1 infobox">
-                        <h5 class="bold">Roel <br>Versteeg</h5>
-                        <img class="responsive-img" src="images/Roel.jpg">
+                        <div class="center">
+                            <h5 class="bold">Roel <br>Versteeg</h5>
+                            <img class="responsive-img" src="images/Roel.jpg">
+                        </div>
                         <p>
                             <strong>Opleiding</strong><br>
                             Creative Media and Game Technologies<br>
@@ -63,11 +64,18 @@ include_once 'includes/head.html'
                             <br>
                             <strong>Contact</strong><br>
                             0940512@hr.nl<br>
+                            <br>
+                            <strong>Over mij</strong><br>
+                            Ik ben fan van werken met hardware en hier leuke projecten mee te maken.<br>
+                            Slimme apparaten bouwen en deze programmeren kwam bij dit project dus goed van pas. <br>
+                            Ook doe ik aan CAD design en 3D printen / modeleren.<br>
                         </p>
                     </div>
                     <div class="col s12 m3 z-depth-1 infobox">
-                        <h5 class="bold">Kaspar <br>Dohrin</h5>
-                        <img class="responsive-img" src="images/Kaspar.jpg">
+                        <div class="center">
+                            <h5 class="bold">Kaspar <br>Dohrin</h5>
+                            <img class="responsive-img" src="images/Kaspar.jpg">
+                        </div>
                         <p>
                             <strong>Opleiding</strong><br>
                             Creative Media and Game Technologies<br>
@@ -77,11 +85,20 @@ include_once 'includes/head.html'
                             <br>
                             <strong>Contact</strong><br>
                             0882916@hr.nl<br>
+                            <br>
+                            <strong>Over mij</strong><br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
                         </p>
                     </div>
                     <div class="col s12 m3 z-depth-1 infobox">
-                        <h5 class="bold">Alicia <br>Smallenbroek</h5>
-                        <img class="responsive-img" src="images/Alto.jpg">
+                        <div class="center">
+                            <h5 class="bold">Alicia <br>Smallenbroek</h5>
+                            <img class="responsive-img" src="images/Alto.jpg">
+                        </div>
                         <p>
                             <strong>Opleiding</strong><br>
                             Communicatie en multimedia design.<br>
@@ -91,11 +108,21 @@ include_once 'includes/head.html'
                             <br>
                             <strong>Contact</strong><br>
                             0934024@hr.nl<br>
+                            <br>
+                            <strong>Over mij</strong><br>
+                            Ik ben enorm gericht op de gebruiker tijdens mijn ontwerpproces. <br>
+                            Ik hou van de gebruiker te leren kennen en op de meest simpele manieren de gebruiker gelukkig te
+                            maken. <br>
+                            Ik denk het liefst oplossingsgericht.
+                            <br>
+                            <br>
                         </p>
                     </div>
                     <div class="col s12 m3 z-depth-1 infobox">
-                        <h5 class="bold">Charissa  <br>van Werkhooven</h5>
-                        <img class="responsive-img" src="images/Charissa.jpg">
+                        <div class="center">
+                            <h5 class="bold">Charissa  <br>van Werkhooven</h5>
+                            <img class="responsive-img" src="images/Charissa.jpg">
+                        </div>
                         <p>
                             <strong>Opleiding</strong><br>
                             Communicatie<br>
@@ -105,146 +132,15 @@ include_once 'includes/head.html'
                             <br>
                             <strong>Contact</strong><br>
                             0823930@hr.nl<br>
+                            <br>
+                            <strong>Over mij</strong><br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
                         </p>
                     </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Informatie -->
-        <div class="row">
-            <div class="large_spacer"></div>
-            <div class="col s10 offset-s1 center">
-                <h2>ONDERZOEK</h2>
-                <h5>Resultaten</h5>
-            </div>
-            <!-- Prototype -->
-            <div class="row">
-                <div class="col s5 offset-s1">
-                    <h4>PROTOTYPE #1</h4>
-                    <p>
-                        Als team hebben we voor ons zelf een hypothese opgesteld voordat we gingen testen. 
-                        Deze hypothese was “Ik geloof dat de gebruiker behoefte heeft aan een gepersonaliseerde robot die voor de gebruiker op locatie kan zijn wanneer de gebruiker dat zelf niet kan”.<br>
-                        Uit het onderzoek en het testen hebben we dan ook ondervonden dat deze hypothese in de werkelijk echter zo is. 
-                        De personen die we hadden getest vielen ook echter in de doelgroep waardoor de test zeer concreet kon gebeuren. 
-                        Het was dan ook zo dat de testpersonen allemaal hebben benoemd dat ze graag iets persoonlijks zouden willen gebruiken dat hun situatie makkelijker kan maken en op een manier ook leuker. 
-                        Als team konden we dan ook vaststellen dat we de goeie kant op gingen met ons concept.
-                    </p>
-                </div>
-                <div class="col s4 offset-s1 center">
-                    <!-- Image -->
-                    <img class="responsive-img" style="max-height: 400px;" alt="" src="images/Robot_design_1.png">
-                </div>
-            </div>
-            <!-- Style guide -->
-            <div class="row">
-                <div class="col s4 offset-s1 center">
-                    <!-- Image -->
-                    <img class="responsive-img" style="max-height: 400px;" alt="" src="images/Styleguide.png">
-                </div>
-                <div class="col s5 offset-s1">
-                    <h4 class="right-align">STYLE GUIDE</h4>
-                    <p>
-                        Als team vroegen we ons af welke kleuren en fonts en andere stijlen onze doelgroep aantrekkelijk vind en zou willen hebben in ons concept. 
-                        We moesten dus een style guide gaan opstellen. <br>
-                        Om dit te ontdekken hebben we eerst onderzoek gedaan naar stijlen die we kunnen gebruiken en stijlen die ook in de zorg omgeving vaker voorkomen. 
-                        Doormiddel van dat onderzoek konden we een enquête opstellen om deze vraag beantwoord te krijgen. 
-                        Dit is ons dan ook gelukt, vanuit de enquête hebben we een style guide kunnen ontwerpen voor onze One pager maar ook voor ons concept.
-                        We kunnen dan vaststellen dat de doelgroep gelukkig word wanneer de doelgroep ons product en website ziet.
-                    </p>
-                </div>
-            </div>
-            <!-- Logo -->
-            <div class="row">
-                <div class="col s5 offset-s1">
-                    <h4>LOGO</h4>
-                    <p>
-                        Een logo is belangrijk, zo word je als bedrijf en product herkent. 
-                        Het was dus ook belangrijk voor ons dat we onze logo’s bij de doelgroep gingen testen,
-                        Dit hebben we dan ook gedaan.<br>
-                        Als team zijn we samen logo’s gaan ontwerpen en zijn we met deze schetsen naar de doelgroep gegaan. 
-                        De doelgroep had hele duidelijke meningen over deze logo’s hierdoor konden we goed verder met de feedback die we hadden ontvangen. 
-                        Het was zeer duidelijk voor ons dat de groep van iets simpels houd en het liefst ook in een kleur, we hebben dit dan ook aan de doelgroep geleverd.
-                    </p>
-                </div>
-                <div class="col s4 offset-s1 center">
-                    <!-- Image -->
-                    <img class="responsive-img" style="max-height: 400px;" alt="" src="images/logos/Deltec_medium_transparant.png">
-                </div>
-            </div>
-            <!-- Personas -->
-            <div class="row">                
-                <div class="col s4 offset-s1 center">
-                    <!-- Image -->
-                    <img class="responsive-img" style="max-height: 400px;" alt="" src="images/Personas.png">
-                </div>
-                <div class="col s5 offset-s1">
-                    <h4 class="right-align">PERSONAS</h4>
-                    <p>
-                        Om de doelgroep beter te leren kennen hebben we de doelgroep geïnterviewd en daaruit 2 persona’s kunnen ontwerpen. 
-                        Doordat we de doelgroep op papier voor onszelf konden neerzetten was het ook heel makkelijk om de doelgroep altijd in ons achterhoofd te houden. 
-                        Niet eens een keuze werd gemaakt zonder de doelgroep te betrekken, 
-                        ons product is gemaakt voor hun dus we wilden hun alles geven waar ze behoeften aan hadden. 
-                        Doormiddel van deze keuze hebben we de doelgroep onze missie succesvol kunnen leveren.
-                    </p>
-                </div>
-            </div>
-
-
-
-            <!-- Gedeelte van Charissa -->
-            <div class="row">
-                <div class="col s5 offset-s1">
-                    <h4>TEKST VAN CHARISSA HIER</h4>
-                    <p>
-                        Ik verwacht nog een kort stukje tekst wat hier kan komen in hoofstukken wat jij hebt geleverd.
-                        De lengte is ongeveer hetzelfde als de voorgaande 4 onderdelen van Alto.
-                    </p>
-                </div>
-                <div class="col s4 offset-s1 center">
-                    <!-- Image -->
-                    <img class="responsive-img" style="max-height: 400px;" alt="" src="images/logos/Deltec_medium_transparant.png">
-                </div>
-            </div>
-            <!-- Style guide -->
-            <div class="row">
-                <div class="col s4 offset-s1 center">
-                    <!-- Image -->
-                    <img class="responsive-img" style="max-height: 400px;" alt="" src="images/logos/Deltec_medium_transparant.png">
-                </div>
-                <div class="col s5 offset-s1">
-                    <h4 class="right-align">TEKST VAN CHARISSA HIER</h4>
-                    <p>
-                        Ik verwacht nog een kort stukje tekst wat hier kan komen in hoofstukken wat jij hebt geleverd.<br>
-                        De lengte is ongeveer hetzelfde als de voorgaande 4 onderdelen van Alto.
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col s5 offset-s1">
-                    <h4>TEKST VAN CHARISSA HIER</h4>
-                    <p>
-                        Ik verwacht nog een kort stukje tekst wat hier kan komen in hoofstukken wat jij hebt geleverd.
-                        De lengte is ongeveer hetzelfde als de voorgaande 4 onderdelen van Alto.
-                    </p>
-                </div>
-                <div class="col s4 offset-s1 center">
-                    <!-- Image -->
-                    <img class="responsive-img" style="max-height: 400px;" alt="" src="images/logos/Deltec_medium_transparant.png">
-                </div>
-            </div>
-            <!-- Style guide -->
-            <div class="row">
-                <div class="col s4 offset-s1 center">
-                    <!-- Image -->
-                    <img class="responsive-img" style="max-height: 400px;" alt="" src="images/logos/Deltec_medium_transparant.png">
-                </div>
-                <div class="col s5 offset-s1">
-                    <h4 class="right-align">TEKST VAN CHARISSA HIER</h4>
-                    <p>
-                        Ik verwacht nog een kort stukje tekst wat hier kan komen in hoofstukken wat jij hebt geleverd.<br>
-                        De lengte is ongeveer hetzelfde als de voorgaande 4 onderdelen van Alto.
-                    </p>
                 </div>
             </div>
         </div>
@@ -268,10 +164,12 @@ include_once 'includes/head.html'
                         </p>
                     </div>
                     <div class="col s3 center">
+                        <div class="large_spacer"></div>
                         <!-- Image -->
                         <img class="responsive-img" style="max-height: 400px;" alt="" src="images/Robot_design_1.png">
                     </div>
                     <div class="col s3 center">
+                        <div class="large_spacer"></div>
                         <!-- Image -->
                         <img class="responsive-img" style="max-height: 400px;" alt="" src="images/Exploded.png">
                     </div>
@@ -289,13 +187,15 @@ include_once 'includes/head.html'
         </div>
 
         <!-- UI -->
-        <div class="row blue1background">
+        <div class="row">
             <div class="col s10 offset-s1">
                 <div class="row">
                     <div class="col s6 center">
                         <div class="large_spacer"></div>
                         <!-- Image -->
                         <img class="responsive-img" style="max-height: 400px;" alt="" src="images/Ui.png">
+                        <!-- Image -->
+                        <img class="responsive-img" style="max-height: 400px;" alt="" src="images/diagram.png">
                     </div>
                     <div class="col s6">
                         <h2>BEDIENING</h2>
@@ -309,16 +209,115 @@ include_once 'includes/head.html'
                             De student kan vervolgens de robot besturen en de les volgen.<br>
                             <br>
                             <strong>Controlepaneel</strong><br>
-                            Het controlepaneel bestaat uit knoppen, met afbeeldingen, die zijn afgestemd op de meest gewilde functionaliteiten die voortkomen uit onze onderzoeken.
+                            Het controlepaneel bestaat uit knoppen, met afbeeldingen, 
+                            die zijn afgestemd op de meest gewilde functionaliteiten die voortkomen uit onze onderzoeken.<br>
+                            <br>
+                            <strong>Gebruikers interface</strong><br>
+                            De user interface maakt twee-wegs -audio- en -videocommunicatie mogelijk.<br>
+                            Door gebruik te maken van open source software hebben wij een ‘vergaderruimte’ gereserveerd op het internet.<br>
+                            Door verbinding te maken via een webbrowser met deze vergaderruimte, kunnen gebruikers elkaar horen, zien,<br> 
+                            en zelfs ervoor kiezen hun scherm te delen.
                         </p>
                     </div>
-                    
-                    <div class="col s12">
-                        <p>
-                            <strong></strong><br>
-                            
-                        </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testemonials -->
+        <div class="row z-depth-1 homebar green1background">
+            <div class="small_spacer"></div>
+            <h2 class="center">TESTEMONIALS</h2>
+            <div class="col s12 m10 offset-s0 offset-m1 center-align">
+                <div class="row grey lighten-4">
+                    <div class="col s12 m4 green1background">
+                        <img class="responsive-img z-depth-1" style="max-height: 500px;" src="images/Testemonial_1.jpg">
                     </div>
+                    <div class="col s12 m4 green1background">
+                        <img class="responsive-img z-depth-1" style="max-height: 500px;" src="images/Testemonial_2.jpg">
+                    </div>
+                    <div class="col s12 m4 green1background">
+                        <img class="responsive-img z-depth-1" style="max-height: 500px;" src="images/Testemonial_3.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Informatie -->
+        <div class="row">
+            <div class="large_spacer"></div>
+            <div class="col s12 m10 offset-s0 offset-m1 center">
+                <h2>ONDERZOEK</h2>
+                <h5>Resultaten</h5>
+            </div>
+            <!-- Prototype -->
+            <div class="row">
+                <div class="col m5 s12 offset-s0 offset-m1">
+                    <h4>PROTOTYPE #1</h4>
+                    <p>
+                        Als team hebben we voor ons zelf een hypothese opgesteld voordat we gingen testen. 
+                        Deze hypothese was “Ik geloof dat de gebruiker behoefte heeft aan een gepersonaliseerde robot die voor de gebruiker op locatie kan zijn wanneer de gebruiker dat zelf niet kan”.<br>
+                        Uit het onderzoek en het testen hebben we dan ook ondervonden dat deze hypothese in de werkelijk echter zo is. 
+                        De personen die we hadden getest vielen ook echter in de doelgroep waardoor de test zeer concreet kon gebeuren. 
+                        Het was dan ook zo dat de testpersonen allemaal hebben benoemd dat ze graag iets persoonlijks zouden willen gebruiken dat hun situatie makkelijker kan maken en op een manier ook leuker. 
+                        Als team konden we dan ook vaststellen dat we de goeie kant op gingen met ons concept.
+                    </p>
+                </div>
+                <div class="col m4 s12 offset-s0 offset-m1 center">
+                    <!-- Image -->
+                    <img class="responsive-img" style="max-height: 400px;" alt="" src="images/Robot_design_1.png">
+                </div>
+            </div>
+            <!-- Style guide -->
+            <div class="row">
+                <div class="col m4 s12 offset-s0 offset-m1 center">
+                    <!-- Image -->
+                    <img class="responsive-img" style="max-height: 400px;" alt="" src="images/Styleguide.png">
+                </div>
+                <div class="col m5 s12 offset-s0 offset-m1">
+                    <h4 class="right-align">STYLE GUIDE</h4>
+                    <p>
+                        Als team vroegen we ons af welke kleuren en fonts en andere stijlen onze doelgroep aantrekkelijk vind en zou willen hebben in ons concept. 
+                        We moesten dus een style guide gaan opstellen. <br>
+                        Om dit te ontdekken hebben we eerst onderzoek gedaan naar stijlen die we kunnen gebruiken en stijlen die ook in de zorg omgeving vaker voorkomen. 
+                        Doormiddel van dat onderzoek konden we een enquête opstellen om deze vraag beantwoord te krijgen. 
+                        Dit is ons dan ook gelukt, vanuit de enquête hebben we een style guide kunnen ontwerpen voor onze One pager maar ook voor ons concept.
+                        We kunnen dan vaststellen dat de doelgroep gelukkig word wanneer de doelgroep ons product en website ziet.
+                    </p>
+                </div>
+            </div>
+            <!-- Logo -->
+            <div class="row">
+                <div class="col m5 s12 offset-s0 offset-m1">
+                    <h4>LOGO</h4>
+                    <p>
+                        Een logo is belangrijk, zo word je als bedrijf en product herkent. 
+                        Het was dus ook belangrijk voor ons dat we onze logo’s bij de doelgroep gingen testen,
+                        Dit hebben we dan ook gedaan.<br>
+                        Als team zijn we samen logo’s gaan ontwerpen en zijn we met deze schetsen naar de doelgroep gegaan. 
+                        De doelgroep had hele duidelijke meningen over deze logo’s hierdoor konden we goed verder met de feedback die we hadden ontvangen. 
+                        Het was zeer duidelijk voor ons dat de groep van iets simpels houd en het liefst ook in een kleur, we hebben dit dan ook aan de doelgroep geleverd.
+                    </p>
+                </div>
+                <div class="col m4 s12 offset-s0 offset-m1 center">
+                    <!-- Image -->
+                    <img class="responsive-img" style="max-height: 400px;" alt="" src="images/logos/Deltec_medium_transparant.png">
+                </div>
+            </div>
+            <!-- Personas -->
+            <div class="row">
+                <div class="col m4 s12 offset-s0 offset-m1 center">
+                    <!-- Image -->
+                    <img class="responsive-img" style="max-height: 400px;" alt="" src="images/Personas.png">
+                </div>
+                <div class="col m5 s12 offset-s0 offset-m1">
+                    <h4 class="right-align">PERSONAS</h4>
+                    <p>
+                        Om de doelgroep beter te leren kennen hebben we de doelgroep geïnterviewd en daaruit 2 persona’s kunnen ontwerpen. 
+                        Doordat we de doelgroep op papier voor onszelf konden neerzetten was het ook heel makkelijk om de doelgroep altijd in ons achterhoofd te houden. 
+                        Niet eens een keuze werd gemaakt zonder de doelgroep te betrekken, 
+                        ons product is gemaakt voor hun dus we wilden hun alles geven waar ze behoeften aan hadden. 
+                        Doormiddel van deze keuze hebben we de doelgroep onze missie succesvol kunnen leveren.
+                    </p>
                 </div>
             </div>
         </div>

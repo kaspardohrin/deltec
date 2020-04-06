@@ -180,6 +180,10 @@ strong {
     height:         40px;
 }
 
+.infobox_holder {
+    height: fit-content;
+}
+
 .infobox {
     height: fit-content;
     transition: all 0.5s;
