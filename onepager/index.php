@@ -326,38 +326,18 @@ include_once 'includes/head.html'
             <!-- Doelgroep analyse -->
             <div class="row">
                 <div class="col m5 s12 offset-s0 offset-m1">
-                    <h4>PROTOTYPE #1</h4>
+                    <h4>Doelgroep analyse</h4>
                     <p>
-                        Als team hebben we voor ons zelf een hypothese opgesteld voordat we gingen testen. 
-                        Deze hypothese was “Ik geloof dat de gebruiker behoefte heeft aan een gepersonaliseerde robot die voor de gebruiker op locatie kan zijn wanneer de gebruiker dat zelf niet kan”.<br>
-                        Uit het onderzoek en het testen hebben we dan ook ondervonden dat deze hypothese in de werkelijk echter zo is. 
-                        De personen die we hadden getest vielen ook echter in de doelgroep waardoor de test zeer concreet kon gebeuren. 
-                        Het was dan ook zo dat de testpersonen allemaal hebben benoemd dat ze graag iets persoonlijks zouden willen gebruiken dat hun situatie makkelijker kan maken en op een manier ook leuker. 
-                        Als team konden we dan ook vaststellen dat we de goeie kant op gingen met ons concept.
+                        Om een goed product te kunnen opleveren voor de student is het van belang om goed in kaart te brengen welke behoeften studenten hebben. <br>
+                        Ook hebben we gekeken naar ontwikkelingen van deze doelgroep om trend en ontwikkelingen mee te nemen in ons verdere onderzoek.<br>
+                        Binnen deze doelgroep volgt 40% een HBO-studie.
+                        De leeftijdscategorie van 20 tot en met 21 jaar is het meest representatief op het hoger onderwijs.
                     </p>
                 </div>
-                <div class="col m4 s12 offset-s0 offset-m1 center">
-                    <!-- Image -->
+                <!-- <div class="col m4 s12 offset-s0 offset-m1 center">
+                    <!- Image ->
                     <img class="responsive-img" style="max-height: 400px;" alt="" src="images/Robot_design_1.png">
-                </div>
-            </div>
-            <!-- Style guide -->
-            <div class="row">
-                <div class="col m4 s12 offset-s0 offset-m1 center">
-                    <!-- Image -->
-                    <img class="responsive-img" style="max-height: 400px;" alt="" src="images/Styleguide.png">
-                </div>
-                <div class="col m5 s12 offset-s0 offset-m1">
-                    <h4 class="right-align">STYLE GUIDE</h4>
-                    <p>
-                        Als team vroegen we ons af welke kleuren en fonts en andere stijlen onze doelgroep aantrekkelijk vind en zou willen hebben in ons concept. 
-                        We moesten dus een style guide gaan opstellen. <br>
-                        Om dit te ontdekken hebben we eerst onderzoek gedaan naar stijlen die we kunnen gebruiken en stijlen die ook in de zorg omgeving vaker voorkomen. 
-                        Doormiddel van dat onderzoek konden we een enquête opstellen om deze vraag beantwoord te krijgen. 
-                        Dit is ons dan ook gelukt, vanuit de enquête hebben we een style guide kunnen ontwerpen voor onze One pager maar ook voor ons concept.
-                        We kunnen dan vaststellen dat de doelgroep gelukkig word wanneer de doelgroep ons product en website ziet.
-                    </p>
-                </div>
+                </div> -->
             </div>
         </div>
 
