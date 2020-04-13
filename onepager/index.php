@@ -341,6 +341,24 @@ include_once 'includes/head.html'
             </div>
         </div>
 
+        <div class="row">
+            <div class="col s10 offset-s1">
+                <h5 class="bold center">Eindpresentatie video</h5>
+                <!-- Video -->
+                <div class="videoWrapper">
+                    <iframe 
+                        title="Deltec eindpresentatie"
+                        width="100%" 
+                        height="900px" 
+                        src="https://www.youtube.com/embed/EPp0WLQLU9Y" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
         <!-- Verkoop opties -->
         <div class="row z-depth-1 homebar blue1background">
             <div class="col s10 offset-s1 center-align">
