@@ -1,18 +1,21 @@
 body {
-  background: white !important;
-  height: 100vh;
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('../images/logo.png');
+  background-size: contain;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
 }
 
 body {
   display: grid;
-  grid-template-columns: 3vw auto 530px auto 5vw;
-  grid-template-rows: 10vh 50vh 40vh;
+  grid-template-columns: 3vw auto 530px auto 3vw;
+  grid-template-rows: 6vh 94vh;
+  background-image: url('../images/logo.png');
 }
 
 #nav {
@@ -20,27 +23,42 @@ body {
   grid-column-end: 6;
   grid-row-start: 1;
   grid-row-end: 2;
+  z-index: 1000;
+}
+
+.nav-controls {
+  display: relative;
+  float: right;
 }
 
 iframe {
   grid-column-start: 1;
   grid-column-end: 6;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  height: 100%;
+  width: 100%;
 }
 
-#loading {
+.loading {
   grid-column-start: 2;
   grid-column-end: 5;
   grid-row-start: 2;
   grid-row-end: 3;
 }
 
+.loading > h2 {
+  text-align: center;
+  margin-top: 41vh;
+}
+
 #interface {
+  display: none;
   grid-column-start: 3;
   grid-column-end: 4;
-  grid-row-start: 3;
-  grid-row-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  z-index: 1000;
 }
 
 ul {
@@ -64,8 +82,8 @@ ul {
 @media only screen and (max-width: 678px) {
   body {
     display: grid;
-    grid-template-columns: 5vw 30vw 30vw 30vw 5vw;
-    grid-template-rows: 10vh 50vh 30vw;
+    grid-template-columns: 5vw auto auto auto 5vw;
+    grid-template-rows: 6vh 54vh 40vh;
   }
   #interface {
     grid-column-start: 2;
@@ -88,6 +106,42 @@ ul {
   #control > img {
     width: 100%;
     height: 100%;
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  @media only screen and (max-height: 678px) {
+    body {
+      display: grid;
+      grid-template-columns: 5vh 25vw auto 25vw 5vh;
+      grid-template-rows: 0 40vh 60vh;
+    }
+    #nav {
+      display: none;
+    }
+    #interface {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 3;
+      grid-row-end: 4;
+    }
+    ul {
+      display: grid;
+      grid-template-columns: 3vh auto 1vh auto 1vh auto 1vh auto 1vh auto 3vh;
+      grid-template-rows: 0.5vh auto 1vh auto 1vh auto 0.5vh;
+      margin: 0;
+    }
+    #interface #control {
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      padding: 0;
+    }
+    
+    #control > img {
+      width: 100%;
+      height: 100%;
+    }
   }
 }
 
