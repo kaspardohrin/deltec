@@ -7,13 +7,14 @@ body {
   background-image: url('../images/logo.png');
   background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
   height: 100vh;
   margin: 0;
 }
 
 body {
   display: grid;
-  grid-template-columns: 3vw auto 530px auto 3vw;
+  grid-template-columns: 3vw auto 44vw 350px 3vw;
   grid-template-rows: 6vh 94vh;
   background-image: url('../images/logo.png');
 }
@@ -28,37 +29,26 @@ body {
 
 .nav-controls {
   display: relative;
-  float: right;
+  float: left;
+}
+
+.side-panel {
+  display: none;
+  background-color: grey;
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  z-index: 1000;
 }
 
 iframe {
   grid-column-start: 1;
   grid-column-end: 6;
-  grid-row-start: 1;
-  grid-row-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
   height: 100%;
   width: 100%;
-}
-
-.loading {
-  grid-column-start: 2;
-  grid-column-end: 5;
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-
-.loading > h2 {
-  text-align: center;
-  margin-top: 41vh;
-}
-
-#interface {
-  display: none;
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  z-index: 1000;
 }
 
 ul {
