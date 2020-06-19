@@ -2,130 +2,130 @@ const controls = {
     'RGB': {
         eyes_1_red: {
             alt: 'Rode Ogen',
-            abbr: 'Ogen Rood',
+            abbr: 'Licht de ogen rood op',
         },
         eyes_1_green: {
-            alt: '',
-            abbr: '',
+            alt: 'Groene Ogen',
+            abbr: 'Licht de ogen groen op',
         },
         eyes_1_blue: {
-            alt: '',
-            abbr: '',
+            alt: 'Blauwe Ogen',
+            abbr: 'Licht de ogen rood op',
         },
     },
     'SEVEN': {
         eyes_2_normal: {
-            alt: '',
-            abbr: '',
+            alt: 'Normale Ogen',
+            abbr: 'Kijk neutraal',
         },
         eyes_2_happy: {
-            alt: '',
-            abbr: '',
+            alt: 'Blije Ogen',
+            abbr: 'Kijk blij',
         },
         eyes_2_angry: {
-            alt: '',
-            abbr: '',
+            alt: 'Boze Ogen',
+            abbr: 'Kijk boos',
         },
         eyes_2_left: {
-            alt: '',
-            abbr: '',
+            alt: 'Links kijkende ogen',
+            abbr: 'Kijk naar links',
         },
         eyes_2_right: {
-            alt: '',
-            abbr: '',
+            alt: 'Rechts kijkende ogen',
+            abbr: 'Kijk naar rechts',
         },
         eyes_2_cross: {
-            alt: '',
-            abbr: '',
+            alt: 'Scheele ogen',
+            abbr: 'Kijk scheel',
         },
         eyes_2_suprised: {
-            alt: '',
-            abbr: '',
+            alt: 'Verbaasde Ogen',
+            abbr: 'Kijk verbaasd',
         },
         eyes_2_random: {
-            alt: '',
-            abbr: '',
+            alt: 'Willekeurige oogbewegingen',
+            abbr: 'Druk willekeurige oogbewegingen uit',
         },
     },
     'EIGHT': {
         eyes_3_normal: {
-            alt: '',
-            abbr: '',
+            alt: 'Normale Ogen',
+            abbr: 'Kijk neutraal',
         },
         eyes_3_happy: {
-            alt: '',
-            abbr: '',
+            alt: 'Blije Ogen',
+            abbr: 'Kijk blij',
         },
         eyes_3_angry: {
-            alt: '',
-            abbr: '',
+            alt: 'Boze Ogen',
+            abbr: 'Kijk boos',
         },
         eyes_3_left: {
-            alt: '',
-            abbr: '',
+            alt: 'Links kijkende ogen',
+            abbr: 'Kijk naar links',
         },
         eyes_3_right: {
-            alt: '',
-            abbr: '',
+            alt: 'Rechts kijkende ogen',
+            abbr: 'Kijk naar rechts',
         },
         eyes_3_cross: {
-            alt: '',
-            abbr: '',
+            alt: 'Scheele ogen',
+            abbr: 'Kijk scheel',
         },
         eyes_3_suprised: {
-            alt: '',
-            abbr: '',
+            alt: 'Verbaasde Ogen',
+            abbr: 'Kijk verbaasd',
         },
         eyes_3_random: {
-            alt: '',
-            abbr: '',
+            alt: 'Willekeurige oogbewegingen',
+            abbr: 'Druk willekeurige oogbewegingen uit',
         },
     },
     'RUPS': {
         move_left: {
-            alt: '',
-            abbr: '',
+            alt: 'Pijl Naar Links',
+            abbr: 'Draai naar links',
         },
         move_right: {
-            alt: '',
-            abbr: '',
+            alt: 'Pijl Naar Rechts',
+            abbr: 'Draai naar rechts',
         },
         move_forward: {
-            alt: '',
-            abbr: '',
+            alt: 'Pijl Naar Voren',
+            abbr: 'Rijd naar voren',
         },
         move_backward: {
-            alt: '',
-            abbr: '',
+            alt: 'Pijl naar achteren',
+            abbr: 'Rijd naar voren',
         },
     },
     'WIELEN': {
         move_left: {
-            alt: '',
-            abbr: '',
+            alt: 'Pijl Naar Links',
+            abbr: 'Draai naar links',
         },
         move_right: {
-            alt: '',
-            abbr: '',
+            alt: 'Pijl Naar Rechts',
+            abbr: 'Draai naar rechts',
         },
         move_forward: {
-            alt: '',
-            abbr: '',
+            alt: 'Pijl Naar Voren',
+            abbr: 'Rijd naar voren',
         },
         move_backward: {
-            alt: '',
-            abbr: '',
+            alt: 'Pijl naar achteren',
+            abbr: 'Rijd naar voren',
         },
     },
     'NONE': {},
     'PHONE': {
         phone_up: {
-            alt: '',
-            abbr: '',
+            alt: 'Pijl Naar Boven',
+            abbr: 'Draai omhoog',
         },
         phone_down: {
-            alt: '',
-            abbr: '',
+            alt: 'Pijl Naar Beneden',
+            abbr: 'Draai omlaag',
         },
     }
 }

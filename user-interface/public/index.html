@@ -26,14 +26,40 @@
                 DELTEC
             </a>
             <a class="navbar-brand options" id="navbar-options" href="#">
-                Options
+                Opties
             </a>
             <a class="navbar-brand controls" id="navbar-controls" href="#">
-                Controls
+                Besturing
+            </a>
+            <a class="navbar-brand notes" id="navbar-notes" href="#">
+                Notities
             </a>
         </nav>
 
-        <div class="side-panel"></div>
+        <button class="open"><img src="./images/arrow-left.svg"></button>
+
+        <div class="side-panel-controls" style="display: none;"><h4>Besturing</h4><button class="close"><img src="./images/arrow-right.svg"></button></div>
+        <div class="side-panel-notes" style="display: none;"><h4>Notities</h4><button class="close"><img src="./images/arrow-right.svg"></button></div>
+        <div class="side-panel-options" style="display: none;"><button class="close"><img src="./images/arrow-right.svg"></button>
+            <form>
+                <div class="form-group">
+                    <h4>Opties</h4>
+                    <label for="eye-module"><h6>Selecteer je ogen</h6></label>
+                    <select class="form-control">
+                        <option>RGB Ledjes</option>
+                        <option>7-Segment Modules</option>
+                        <option>8x8 Matrix</option>
+                      </select>
+                    <label for="wheel-module"><h6>Selecteer je wielen</h6></label>
+                      <select class="form-control">
+                        <option>Wielen</option>
+                        <option>Rupsbanden</option>
+                        <option>Geen</option>
+                      </select>
+                    <button type="submit" value="send" class="btn btn-primary">Opslaan</button>
+                </div>
+            </form>
+        </div>
 
         <!-- JS Libraries -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -50,11 +76,12 @@
         <script crossorigin src="https://unpkg.com/@daily-co/daily-js"></script>
 
         <!-- Custom Script -->
+        <script src="./js/style.js"></script>
         <script src="./js/iframe.js"></script>
         <script src="./js/controls.js"></script>
         <script src="./js/buttons.js"></script>
         <script src="./js/socket.js"></script>
-        <script src="./js/style.js"></script>
+        <script src="./js/update-settings.js"></script>
     </body>
 
 </html>

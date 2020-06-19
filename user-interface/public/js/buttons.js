@@ -18,22 +18,20 @@ const title = {
     'PHONE': 'Camera',
 }
 
-let settings = [
+let settings = new Array(
     morph['Telefoon'],
-    morph['7 Segment Modules'],
-    morph['Wielen'],
-]
+)
 
 for (const item of settings) {
-    let section = `<div class="control-section" id="${title[item]}">${title[item]}</div>`
+    let section = `<div class="control-section" id="${title[item].toLowerCase()}"><h6>${title[item]}</h6></div>`
 
-    $('body').append(section)
+    $('.side-panel-controls').append(section)
 
     for (const key in controls[item]) {
         // let button = `<li class="list-inline-item" id="${key}"><abbr title="${key.abbr}"><button id="control" onclick="send(${key})"><img src="./images/${key}.png" alt="${key.alt}"></button></abbr></li>`
 
-        let button = `<li class="list-inline-item" id="${key}"><abbr title="${key.abbr}"><button id="control" onclick="send('${key}')"><img src="./images/look-normal.png" alt="${key.alt}"></button></abbr></li>`
+        let button = `<li class="list-inline-item ${item.toLowerCase()}" id="${key}"><abbr title="${controls[item][key]['alt']}"><button class="control ${item.toLowerCase()}" id="${key}" onclick="send('${key}')"><img src="./images/look-normal.png" alt="${controls[item][key]['abbr']}"></button></abbr></li>`
 
-        $(`#${title[item]}`).append(button)
+        $(`#${title[item].toLowerCase()}`).append(button)
     }
 }
