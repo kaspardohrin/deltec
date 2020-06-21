@@ -141,8 +141,7 @@ function put_button_left() {
         console.log(`scale`)
 
     } else {
-        $('button.raise-hand').css("left", "calc(50vw - 75px - (350px+3vw)/2)")
-        // $('button.raise-hand').css("left", "380.5px")   
+        $('button.raise-hand').css("left", "calc(50vw - 75px - (350px+3vw)/2)") 
     }
 }
 
