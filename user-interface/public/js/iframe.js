@@ -8,7 +8,7 @@ async function iframe() {
         showLeaveButton: true,
     })
 
-    await callFrame.join({ url: 'https://deltec.daily.co/ello' })
+    await callFrame.join({ url: 'https://deltec.daily.co/hello' })
 
     // $('.loading').remove()
     $('iframe').css({
