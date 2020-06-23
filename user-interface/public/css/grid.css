@@ -39,14 +39,20 @@ label > h6 {
 #navbar-options > img:hover,
 #navbar-controls > img:hover,
 #navbar-notes > img:hover {
-  transition-duration: 0.1s;
+  transition-duration: 0.3s;
   transform: scale(1.25);
+}
+
+#navbar-options > img,
+#navbar-controls > img,
+#navbar-notes > img {
+  transition-duration: 0.3s;
 }
 
 #navbar-options-active > img,
 #navbar-controls-active > img,
 #navbar-notes-active > img {
-  transition-duration: 0.1s;
+  transition-duration: 0.3s;
   transform: scale(1.2) rotate(10deg);
 }
 
@@ -71,22 +77,23 @@ button.raise-hand {
   box-shadow: 1px 2px 3px rgba(59,59,60, 0.5);
   bottom: 13px;
   z-index: 2000;
+  transition-duration: 0.3s;
 }
 
 button.raise-hand:hover {
-  transition-duration: 0.1s;
+  transition-duration: 0.3s;
   transform: scale(1.05);
 }
 
 button.raise-hand:focus:hover {
-  transition-duration: 0.1s;
+  transition-duration: 0.3s;
   transform: scale(1.05);
   color: white;
   background-color: #243058;
 }
 
 button.raise-hand:focus {
-  transition-duration: 0.1s;
+  transition-duration: 0.3s;
   color: white;
   background-color: #243058;
 }
@@ -130,20 +137,51 @@ button.open img {
   height: 50px;
 }
 
+.note {
+  position: relative;
+  float: right;
+  color: black;
+  border: none;
+  padding: 0;
+  margin: -8px -8px 0 0;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(0,0,0,0);
+  transition-duration: 1.2s;
+}
+
+.note > img {
+  float: right;
+  padding: 0;
+  margin: 0;
+  width: 20px;
+  height: 20px;
+}
+
+li.list-inline-item {
+  width: calc(100% - 20px + 8px)
+}
+
+.note:hover {
+  transition-duration: 1.2s;
+  transform: rotate(67.5deg);
+}
+
 #notes-button, #options-button {
   color: black;
   background-color: white;
   border: 1px solid #ced4da;
   box-shadow: 1px 2px 3px rgba(59,59,60, 0.5);
+  transition-duration: 0.6s;
 }
 
 #notes-button:hover, #options-button:hover {
-  transition-duration: 0.5s;
+  transition-duration: 0.6s;
   transform: scale(1.02);
 }
 
 .side-panel-options {
-  overflow: scroll;
+  overflow-y: scroll;
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto;
@@ -157,7 +195,7 @@ button.open img {
 }
 
 .side-panel-controls {
-  overflow: scroll;
+  overflow-y: scroll;
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto;
@@ -171,7 +209,7 @@ button.open img {
 }
 
 .side-panel-notes {
-  overflow: scroll;
+  overflow-y: scroll;
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto;
@@ -202,10 +240,11 @@ button.open img {
 }
 
 .control {
+  transition-duration: 0.3s;
   background: none;
 }
 .control:hover {
-  transition-duration: 0.1s;
+  transition-duration: 0.3s;
   transform: scale(1.1) rotate(10deg)
 }
 
