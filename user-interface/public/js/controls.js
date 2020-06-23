@@ -38,7 +38,7 @@ const controls = {
             alt: 'Scheele ogen',
             abbr: 'Kijk scheel',
         },
-        eyes_2_suprised: {
+        eyes_2_surprised: {
             alt: 'Verbaasde Ogen',
             abbr: 'Kijk verbaasd',
         },
@@ -72,7 +72,7 @@ const controls = {
             alt: 'Scheele ogen',
             abbr: 'Kijk scheel',
         },
-        eyes_3_suprised: {
+        eyes_3_surprised: {
             alt: 'Verbaasde Ogen',
             abbr: 'Kijk verbaasd',
         },
