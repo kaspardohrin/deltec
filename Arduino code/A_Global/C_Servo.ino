@@ -67,11 +67,11 @@ void wiggleTail() {
 }
 */
 
-uint8_t phonePositions[] = {0, 20, 40, 60, 80, 90};   // Preselected tail angles
+uint8_t phonePositions[] = {0, 30, 60, 90, 120, 150, 180};   // Preselected tail angles
 uint8_t currentPhonePosition = 0;                     // Current position the phone is in
 
 void phoneUp() {
-  if (!(currentPhonePosition + 1) > 5) {
+  if ((currentPhonePosition + 1) < 7) {
     currentPhonePosition ++;
     phoneServo.write(phonePositions[currentPhonePosition]);
   } else {

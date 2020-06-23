@@ -162,6 +162,10 @@ const uint8_t EYE_LOAD_8[] = {
  * @param eyeAnimation Enum representing the animation
  */
 void setEyeType(EyeType eyeAnimation) {
+  // Save latest animation state
+  if (eyeAnimation != BLINK) {
+    nextIdleMovementEyes = eyeAnimation;
+  }
   // Each eye module has a different amount of possible effects
   switch (eyeModuleVersion)
   {

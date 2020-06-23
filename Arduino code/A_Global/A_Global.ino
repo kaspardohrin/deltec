@@ -8,12 +8,12 @@
 #define SEGMENT_2_DIN 23
 #define SEGMENT_CLK 21
 // Servo pin
-#define SERVO_PIN 19
+#define SERVO_PIN 18
 // Relay pins
-#define LEFT_MOTOR_FORWARD_PIN 25
-#define LEFT_MOTOR_BACKWARD_PIN 26
-#define RIGHT_MOTOR_FORWARD_PIN 32
-#define RIGHT_MOTOR_BACKWARD_PIN 33
+#define LEFT_MOTOR_FORWARD_PIN 26
+#define LEFT_MOTOR_BACKWARD_PIN 25
+#define RIGHT_MOTOR_FORWARD_PIN 33
+#define RIGHT_MOTOR_BACKWARD_PIN 32
 
 // const char* ssid = "Wifi name";
 // const char* password = "Pass here";
@@ -37,7 +37,7 @@ bool idleTail = true;                         // Should the tail have changing r
 uint16_t intervalBlink = 4000;                // Time between blinks
 uint16_t intervalIdleEyes = 5000;             // Time between idle movement eyes
 uint16_t intervalIdleTail = 6000;             // Time between idle movement tail
-uint16_t intervalMovement = 5000;             // Duration of move
+uint16_t intervalMovement = 1000;             // Duration of move
 
 unsigned long previousMillisBlink = 0;        // Time last blink was done
 unsigned long previousMillisIdleEyes = 0;     // Time last idle move was done
