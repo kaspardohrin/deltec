@@ -82,10 +82,6 @@ const controls = {
         },
     },
     'RUPS': {
-        move_backward: {
-            alt: 'Pijl Naar Achteren',
-            abbr: 'Rijd naar achteren',
-        },
         move_left: {
             alt: 'Pijl Naar Links',
             abbr: 'Draai naar links',
@@ -97,13 +93,13 @@ const controls = {
         move_forward: {
             alt: 'Pijl Naar Voren',
             abbr: 'Rijd naar voren',
+        },
+        move_backward: {
+            alt: 'Pijl Naar Achteren',
+            abbr: 'Rijd naar achteren',
         },
     },
     'WIELEN': {
-        move_backward: {
-            alt: 'Pijl Naar Achteren',
-            abbr: 'Rijd naar achteren',
-        },
         move_left: {
             alt: 'Pijl Naar Links',
             abbr: 'Draai naar links',
@@ -115,6 +111,10 @@ const controls = {
         move_forward: {
             alt: 'Pijl Naar Voren',
             abbr: 'Rijd naar voren',
+        },
+        move_backward: {
+            alt: 'Pijl Naar Achteren',
+            abbr: 'Rijd naar achteren',
         },
     },
     'NONE': {},

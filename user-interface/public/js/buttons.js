@@ -39,9 +39,10 @@ const parse = (string) => {
 
 let settings = new Array(
     morph['Telefoon'],
-    morph[parse(getUrlParameter('eyes'))],
-    morph[parse(getUrlParameter('wheels'))],
 )
+
+if (morph[parse(getUrlParameter('eyes'))]) settings.push(morph[parse(getUrlParameter('eyes'))])
+if (morph[parse(getUrlParameter('wheels'))]) settings.push(morph[parse(getUrlParameter('wheels'))])
 
 for (const item of settings) {
     let section = `<div class="control-section" id="${title[item].toLowerCase()}"><h6>${title[item]}</h6></div>`

@@ -1,5 +1,15 @@
 let lastopened = ''
 
+window.addEventListener("resize", function() {
+    if ($('#navbar-controls-active')[0] || $('#navbar-notes-active')[0] || $('#navbar-options-active')[0] ) {
+        scale_iframe()
+        put_button_left()
+    } else {
+        default_iframe()
+        put_button_right()
+    }
+}, false)
+
 $(document).ready( () => {
  $('.navbar-brand.controls').on('click', function () {
     if ($('#navbar-controls')[0]) {
@@ -13,7 +23,7 @@ $(document).ready( () => {
 
         $('button.open').css("display", "none")
 
-        $('iframe').css("grid-column-end", "4")
+        scale_iframe()
 
         lastopened = 'controls'
         put_button_left()
@@ -26,7 +36,7 @@ $(document).ready( () => {
 
         $('button.open').css("display", "block")
 
-        $('iframe').css("grid-column-end", "6")
+        default_iframe()
         put_button_right()
     }
  })
@@ -44,7 +54,7 @@ $(document).ready( () => {
 
         $('button.open').css("display", "none")
 
-        $('iframe').css("grid-column-end", "4")
+        scale_iframe()
 
         lastopened = 'options'
         put_button_left()
@@ -57,7 +67,7 @@ $(document).ready( () => {
 
         $('button.open').css("display", "block")
 
-        $('iframe').css("grid-column-end", "6")
+        default_iframe()
         put_button_right()
     }
  })
@@ -75,7 +85,7 @@ $('.navbar-brand.notes').on('click', function () {
 
         $('button.open').css("display", "none")
 
-        $('iframe').css("grid-column-end", "4")
+        scale_iframe()
 
         lastopened = 'notes'
         put_button_left()
@@ -88,7 +98,7 @@ $('.navbar-brand.notes').on('click', function () {
 
         $('button.open').css("display", "block")
 
-        $('iframe').css("grid-column-end", "6")
+        default_iframe()
         put_button_right()
     }
  })
@@ -104,7 +114,7 @@ $('.navbar-brand.notes').on('click', function () {
 
     $('button.open').css("display", "block")
 
-    $('iframe').css("grid-column-end", "6")
+    default_iframe()
     put_button_right()
  })
 
@@ -127,32 +137,55 @@ $('.navbar-brand.notes').on('click', function () {
 
     $('button.open').css("display", "none")
 
-    $('iframe').css("grid-column-end", "4")
+    scale_iframe()
     put_button_left()
  })
 })
 
 function put_button_left() {
-    if (window.matchMedia("(orientation: portrait)").matches) {
-        $('button.raise-hand').css("left", "calc(100vw - 45vw + ((45vw - 130px) / 2))")
+    if (window.matchMedia("(orientation: portrait)").matches && window.innerWidth < 679) {
+        $('button.raise-hand').css("left", "calc(55vw - 120px)")
 
     } else if (window.matchMedia("(orientation: landscape)").matches && window.innerHeight < 679) {
-        $('button.raise-hand').css("left", "calc(50vw + 65px - 40vw - 5vh)")
-        console.log(`scale`)
+        $('button.raise-hand').css("left", "calc(55vw - 110px)")
 
     } else {
-        $('button.raise-hand').css("left", "calc(50vw - 75px - (350px+3vw)/2)") 
+        $('button.raise-hand').css("left", "calc((100vw - 350px - 3vw) / 2 - 75px)") 
     }
 }
 
 function put_button_right() {
-    if (window.matchMedia("(orientation: portrait)").matches) {
-        $('button.raise-hand').css("left", "calc(50vw - 65px)")
+    if (window.matchMedia("(orientation: portrait)").matches && window.innerWidth < 679) {
+        $('button.raise-hand').css("left", "calc(50vw - 55px)")
 
     } else if (window.matchMedia("(orientation: landscape)").matches && window.innerHeight < 679) {
-        $('button.raise-hand').css("left", "calc(50vw - 65px)")
+        $('button.raise-hand').css("left", "calc(50vw - 55px)")
 
     } else {
         $('button.raise-hand').css("left", "calc(50vw - 75px)")
+    }
+}
+
+function default_iframe() {
+    if (window.matchMedia("(orientation: portrait)").matches && window.innerWidth < 679) {
+        $('iframe').css("grid-column-end", "6")
+
+    } else if (window.matchMedia("(orientation: landscape)").matches && window.innerHeight < 679) {
+        $('iframe').css("grid-column-end", "6")
+
+    } else {
+        $('iframe').css("grid-column-end", "6")
+    }
+}
+
+function scale_iframe() {
+    if (window.matchMedia("(orientation: portrait)").matches && window.innerWidth < 679) {
+        $('iframe').css("grid-column-end", "6")
+
+    } else if (window.matchMedia("(orientation: landscape)").matches && window.innerHeight < 679) {
+        $('iframe').css("grid-column-end", "6")
+
+    } else {
+        $('iframe').css("grid-column-end", "4")
     }
 }

@@ -2,7 +2,7 @@ const url = 'ws://86.88.80.96:1337';
 let connection;
 
 // Set up a new websocket with an ESP32
-// websocketSetup();
+websocketSetup();
 
 function websocketSetup() {
     connection = new WebSocket(url);
@@ -32,5 +32,5 @@ function onClose(evt) {
 }
 
 function send(action) {
-    // connection.send(action)
+    connection.send(action)
 }

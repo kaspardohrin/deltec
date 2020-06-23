@@ -19,6 +19,10 @@ body {
   background-image: url('../images/logo.png');
 }
 
+label > h6 {
+  margin-bottom: 0 !important;
+}
+
 #nav {
   background-color: #2F89E2;
   grid-column-start: 1;
@@ -51,41 +55,45 @@ body {
   float: left;
 }
 
+select.form-control {
+  box-shadow: 1px 2px 3px rgba(59,59,60, 0.5);
+}
+
 button.raise-hand {
   background-color: white;
   position: absolute;
+  border: 1px solid #ced4da;
   border-radius: 5px;
   width: 150px;
   height: 40px;
   text-align: center;
   left: calc(50vw - 75px);
-  box-shadow: 1px 2px 5px #8897a8;
+  box-shadow: 1px 2px 3px rgba(59,59,60, 0.5);
   bottom: 13px;
   z-index: 2000;
 }
 
 button.raise-hand:hover {
   transition-duration: 0.1s;
-  transform: scale(1.1)
+  transform: scale(1.05);
 }
 
 button.raise-hand:focus:hover {
   transition-duration: 0.1s;
-  transform: scale(1.1);
+  transform: scale(1.05);
   color: white;
-  background-color: #8897a8;
+  background-color: #243058;
 }
 
 button.raise-hand:focus {
   transition-duration: 0.1s;
-  transform: scale(1.05);
   color: white;
-  background-color: #8897a8;
+  background-color: #243058;
 }
 
 button.close {
   position: absolute;
-  fill: #8897a8;
+  fill: #3b3b3c;
   top: calc((100vh - 6vh) / 2);
   width: 50px;
   height: 50px;
@@ -122,13 +130,25 @@ button.open img {
   height: 50px;
 }
 
+#notes-button, #options-button {
+  color: black;
+  background-color: white;
+  border: 1px solid #ced4da;
+  box-shadow: 1px 2px 3px rgba(59,59,60, 0.5);
+}
+
+#notes-button:hover, #options-button:hover {
+  transition-duration: 0.5s;
+  transform: scale(1.02);
+}
 
 .side-panel-options {
+  overflow: scroll;
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto;
   border-top: 1px solid black;
-  background-color: #e1e7ee;
+  background-color: #f2f8ff;
   grid-column-start: 4;
   grid-column-end: 6;
   grid-row-start: 2;
@@ -137,11 +157,12 @@ button.open img {
 }
 
 .side-panel-controls {
+  overflow: scroll;
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto;
   border-top: 1px solid black;
-  background-color: #e1e7ee;
+  background-color: #f2f8ff;
   grid-column-start: 4;
   grid-column-end: 6;
   grid-row-start: 2;
@@ -155,7 +176,7 @@ button.open img {
   grid-template-columns: auto;
   grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto;
   border-top: 1px solid black;
-  background-color: #e1e7ee;
+  background-color: #f2f8ff;
   grid-column-start: 4;
   grid-column-end: 6;
   grid-row-start: 2;
@@ -169,16 +190,15 @@ button.open img {
 }
 
 #notes-form {
-  box-shadow: 1px 2px 5px #8897a8;
+  box-shadow: 1px 2px 3px rgba(59,59,60, 0.5);
 }
 
 .notes-section {
   color: black;
   margin: 10px;
-  background-color: #dae0e7;
-  box-shadow: 1px 2px 5px #8897a8;
+  background-color: white;
+  box-shadow: 1px 2px 3px rgba(59,59,60, 0.5);
   padding: 10px;
-  border-bottom: 1px solid #8897a8;
 }
 
 .control {
@@ -192,10 +212,9 @@ button.open img {
 .control-section {
   color: black;
   margin: 10px;
-  background-color: #dae0e7;
-  box-shadow: 1px 2px 5px #8897a8;
+  background-color: white;
+  box-shadow: 1px 2px 3px rgba(59,59,60, 0.5);
   padding: 10px;
-  border-bottom: 1px solid #8897a8;
 }
 
 .control, .control img {
@@ -213,12 +232,12 @@ button.open img {
 .side-panel-controls > h4,
 .side-panel-notes > h4 {
   margin: 10px 10px 25px 10px !important;
-  border-bottom: 1px solid #8897a8
+  border-bottom: 1px solid #243058
 }
 
 .side-panel-options > form > div > h4 {
   margin-bottom: 25px !important;
-  border-bottom: 1px solid #8897a8
+  border-bottom: 1px solid #243058
 }
 
 select.form-control {
@@ -261,8 +280,9 @@ ul {
   }
 
   button.raise-hand {
-    left: calc(50vw - 65px);
-    width: 130px;
+    left: calc(50vw - 55px);
+    font-size: smaller;
+    width: 110px;
   }
   
   button.close {
@@ -304,6 +324,11 @@ ul {
     }
     #nav {
       display: block;
+    }
+    button.raise-hand {
+      left: calc(50vw - 55px);
+      font-size: smaller;
+      width: 110px;
     }
     button.close {
       right: calc(40vw + 20px)
