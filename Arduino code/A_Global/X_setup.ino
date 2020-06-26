@@ -8,21 +8,33 @@ void setup() {
   display_left.clear();
   display_right.clear();
 
-  // Servo setup
-  if (!tailServo.attached()) {
-		tailServo.setPeriodHertz(50); // standard 50 hz servo
-		tailServo.attach(SERVO_PIN, 1000, 2000); // Attach the servo after it has been detatched
+  // Servo setup                                                <-- tail code depricated in V2
+  // if (!tailServo.attached()) {
+	// 	tailServo.setPeriodHertz(50); // standard 50 hz servo
+	// 	tailServo.attach(SERVO_PIN, 1000, 2000); // Attach the servo after it has been detatched
+	// }
+  // tailServo.write(0);
+  if (!phoneServo.attached()) {
+		phoneServo.setPeriodHertz(50); // standard 50 hz servo
+		phoneServo.attach(SERVO_PIN, 1000, 2000); // Attach the servo after it has been detatched
 	}
-  tailServo.write(0);
+  phoneServo.write(0);
 
   // Relay motor setup
-  pinMode(LEFT_MOTOR_RELAY_PIN, OUTPUT);
-  pinMode(RIGHT_MOTOR_RELAY_PIN, OUTPUT);
-  digitalWrite(LEFT_MOTOR_RELAY_PIN, HIGH);
-  digitalWrite(RIGHT_MOTOR_RELAY_PIN, HIGH);
+  pinMode(LEFT_MOTOR_FORWARD_PIN, OUTPUT);
+  pinMode(LEFT_MOTOR_BACKWARD_PIN, OUTPUT);
+  pinMode(RIGHT_MOTOR_FORWARD_PIN, OUTPUT);
+  pinMode(RIGHT_MOTOR_BACKWARD_PIN, OUTPUT);
+  digitalWrite(LEFT_MOTOR_FORWARD_PIN, HIGH);
+  digitalWrite(LEFT_MOTOR_BACKWARD_PIN, HIGH);
+  digitalWrite(RIGHT_MOTOR_FORWARD_PIN, HIGH);
+  digitalWrite(RIGHT_MOTOR_BACKWARD_PIN, HIGH);
 
   // Test tail
-  wiggleTail();
+  // wiggleTail(); <-- tail code depricated in V2
+
+  // Test phone servo
+  phoneServo.write(45);
 
   // Setup WiFi
   // Configures static IP address

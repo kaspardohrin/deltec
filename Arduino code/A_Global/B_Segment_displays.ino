@@ -38,24 +38,23 @@ const uint8_t EYE_3[] = {
   0x00,
 	SEG_A | SEG_B | SEG_F | SEG_G
 };
-
-/** _ _ _ _
+/** |- - - _
  * _ o _ _
 */
 const uint8_t EYE_4[] = {
-	0x00,
-	SEG_C | SEG_D | SEG_E | SEG_G,
-	0x00,
+	SEG_A | SEG_F,
+	SEG_A | SEG_C | SEG_D | SEG_E | SEG_G,
+	SEG_A,
   0x00
 };
-/** _ _ _ _
+/** _ - - -|
  * _ _ o _
 */
 const uint8_t EYE_5[] = {
   0x00,
-	0x00,
-	SEG_C | SEG_D | SEG_E | SEG_G,
-  0x00
+	SEG_A,
+	SEG_A | SEG_C | SEG_D | SEG_E | SEG_G,
+  SEG_A | SEG_B
 };
 /** _ _ _ _
  * _ - _ _
@@ -160,66 +159,89 @@ const uint8_t EYE_LOAD_8[] = {
 
 /**
  * Set the animation on the eyes
- * @param eyeType Number representing the animation
- * 0 = normal
- * 1 = look left
- * 2 = look right
- * 3 = look down
- * 4 = cross
- * 5 = happy
+ * @param eyeAnimation Enum representing the animation
  */
-void setEyeType(uint8_t eyeType) {
-  display_left.clear();
-  display_right.clear();
-  switch (eyeType)
+void setEyeType(EyeType eyeAnimation) {
+  // Save latest animation state
+  if (eyeAnimation != BLINK) {
+    nextIdleMovementEyes = eyeAnimation;
+  }
+  // Each eye module has a different amount of possible effects
+  switch (eyeModuleVersion)
   {
-  case 0:
-    // Eye normal
-    display_left.setSegments(EYE_1);
-    display_right.setSegments(EYE_2);
+  case RGB:
+    setEyeTypeModule1(eyeAnimation);
     break;
-  case 1:
-    // look left
-    display_left.setSegments(EYE_0);
-    display_right.setSegments(EYE_0);
+  case SEGMENT:
+    setEyeTypeModule2(eyeAnimation);
     break;
-  case 2:
-    // look right
-    display_left.setSegments(EYE_3);
-    display_right.setSegments(EYE_3);
-    break;
-  case 3:
-    // look down
-    display_left.setSegments(EYE_4);
-    display_right.setSegments(EYE_5);
-    break;
-  case 4:
-    // look cross
-    display_left.setSegments(EYE_3);
-    display_right.setSegments(EYE_0);
-    break;
-  case 5:
-    // look happy
-    display_left.setSegments(EYE_6);
-    display_right.setSegments(EYE_7);
-    break;
-  case 6:
-    // look surprised
-    display_left.setSegments(EYE_8);
-    display_right.setSegments(EYE_8);
-    break;
-  default:
+  case MATRIX:
+    setEyeTypeModule3(eyeAnimation);
     break;
   }
+}
+void setEyeTypeModule1(EyeType eyeAnimation) {
+
+}
+void setEyeTypeModule2(EyeType eyeAnimation) {
+  display_left.clear();
+  display_right.clear();
+  switch (eyeAnimation) {
+    case NORMAL:
+      // Eye normal
+      display_left.setSegments(EYE_1);
+      display_right.setSegments(EYE_2);
+      break;
+    case HAPPY:
+      // look happy
+      display_left.setSegments(EYE_6);
+      display_right.setSegments(EYE_7);
+      break;
+    case ANGRY:
+      // look angry
+      display_left.setSegments(EYE_5);
+      display_right.setSegments(EYE_4);
+      break;
+    case LEFT:
+      // look left
+      display_left.setSegments(EYE_0);
+      display_right.setSegments(EYE_0);
+      break;
+    case RIGHT:
+      // look right
+      display_left.setSegments(EYE_3);
+      display_right.setSegments(EYE_3);
+      break;
+    case CROSS:
+      // look cross
+      display_left.setSegments(EYE_3);
+      display_right.setSegments(EYE_0);
+      break;
+    case SURPRISED:
+      // look surprised
+      display_left.setSegments(EYE_8);
+      display_right.setSegments(EYE_8);
+      break;
+    case BLINK:
+      // look blink
+      display_left.setSegments(EYE_6);
+      display_right.setSegments(EYE_7);
+      break;
+    default:
+      break;
+  }
+}
+void setEyeTypeModule3(EyeType eyeAnimation) {
+
 }
 
 void eyeBlink() {
   // start blink
   if (intervalBlink != 200) {
     // Blink animation
-    setEyeType(5);
+    setEyeType(BLINK);
     intervalBlink = 200;
-  } 
+  }
   // Open eyes
   else {
     setEyeType(nextIdleMovementEyes);
@@ -230,51 +252,145 @@ void eyeBlink() {
 
 void idleMovementEyes() {
   setEyeType(nextIdleMovementEyes);
-  if (nextIdleMovementEyes != 0) {
+  if (nextIdleMovementEyes != NORMAL) {
     // The next idle movement will be normal eyes if it was different this time
-    nextIdleMovementEyes = 0;
+    nextIdleMovementEyes = NORMAL;
   } else {
     // Next idle movement will be random
-    nextIdleMovementEyes = random(1, 6);
+    uint8_t randomNumber = floor(random(1, 6));
+    switch (randomNumber)
+    {
+    case 1:
+      nextIdleMovementEyes = HAPPY;
+      break;
+    case 2:
+      nextIdleMovementEyes = ANGRY;
+      break;
+    case 3:
+      nextIdleMovementEyes = LEFT;
+      break;
+    case 4:
+      nextIdleMovementEyes = RIGHT;
+      break;
+    case 5:
+      nextIdleMovementEyes = CROSS;
+      break;
+    case 6:
+      nextIdleMovementEyes = SURPRISED;
+      break;
+    }
   }
   // Next idle movement interval will be between 5 and 15 seconds
   intervalIdleEyes = (random(2,5)*1000);
 }
 
 void WiFiLoadAnimation() {
-  switch (loadingBar)
+  // Each eye module has a different amount of possible effects
+  switch (eyeModuleVersion)
   {
-  case 0:
-    display_left.setSegments(EYE_LOAD_1);
-    display_right.setSegments(EYE_LOAD_1);
+  case RGB:
+    loadAnimationModule1();
     break;
-  case 1:
-    display_left.setSegments(EYE_LOAD_2);
-    display_right.setSegments(EYE_LOAD_2);
+  case SEGMENT:
+    loadAnimationModule2();
     break;
-  case 2:
-    display_left.setSegments(EYE_LOAD_3);
-    display_right.setSegments(EYE_LOAD_3);
+  case MATRIX:
+    loadAnimationModule3();
     break;
-  case 3:
-    display_left.setSegments(EYE_LOAD_4);
-    display_right.setSegments(EYE_LOAD_4);
-    break;
-  case 4:
-    display_left.setSegments(EYE_LOAD_5);
-    display_right.setSegments(EYE_LOAD_5);
-    break;
-  case 5:
-    display_left.setSegments(EYE_LOAD_6);
-    display_right.setSegments(EYE_LOAD_6);
-    break;
-  case 6:
-    display_left.setSegments(EYE_LOAD_7);
-    display_right.setSegments(EYE_LOAD_7);
-    break;
-  case 7:
-    display_left.setSegments(EYE_LOAD_8);
-    display_right.setSegments(EYE_LOAD_8);
-    break;
+  }
+}
+// Wifi load animation for RGB eye module
+void loadAnimationModule1() {
+  switch (loadingBar) {
+    case 0:
+      // RGB led loading
+      break;
+    case 1:
+      // RGB led loading
+      break;
+    case 2:
+      // RGB led loading
+      break;
+    case 3:
+      // RGB led loading
+      break;
+    case 4:
+      // RGB led loading
+      break;
+    case 5:
+      // RGB led loading
+      break;
+    case 6:
+      // RGB led loading
+      break;
+    case 7:
+      // RGB led loading
+      break;
+  }
+}
+// Wifi load animation for 7 segment eye module
+void loadAnimationModule2() {
+  switch (loadingBar) {
+    case 0:
+      display_left.setSegments(EYE_LOAD_1);
+      display_right.setSegments(EYE_LOAD_1);
+      break;
+    case 1:
+      display_left.setSegments(EYE_LOAD_2);
+      display_right.setSegments(EYE_LOAD_2);
+      break;
+    case 2:
+      display_left.setSegments(EYE_LOAD_3);
+      display_right.setSegments(EYE_LOAD_3);
+      break;
+    case 3:
+      display_left.setSegments(EYE_LOAD_4);
+      display_right.setSegments(EYE_LOAD_4);
+      break;
+    case 4:
+      display_left.setSegments(EYE_LOAD_5);
+      display_right.setSegments(EYE_LOAD_5);
+      break;
+    case 5:
+      display_left.setSegments(EYE_LOAD_6);
+      display_right.setSegments(EYE_LOAD_6);
+      break;
+    case 6:
+      display_left.setSegments(EYE_LOAD_7);
+      display_right.setSegments(EYE_LOAD_7);
+      break;
+    case 7:
+      display_left.setSegments(EYE_LOAD_8);
+      display_right.setSegments(EYE_LOAD_8);
+      break;
+  }
+}
+// Wifi load animation for 8x8 matrix eye module
+void loadAnimationModule3() {
+  switch (loadingBar) {
+    case 0:
+      // Matrix loading animation
+      break;
+    case 1:
+      // Matrix loading animation
+      break;
+    case 2:
+      // Matrix loading animation
+      break;
+    case 3:
+      // Matrix loading animation
+      break;
+    case 4:
+      // Matrix loading animation
+      break;
+    case 5:
+      // Matrix loading animation
+      break;
+    case 6:
+      // Matrix loading animation
+      break;
+    case 7:
+      // Matrix loading animation
+      break;
   }
 }

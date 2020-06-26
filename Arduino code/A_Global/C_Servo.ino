@@ -1,5 +1,6 @@
 // New servo instance
-Servo tailServo;
+// Servo tailServo;           <-- tail code depricated in V2
+Servo phoneServo;
 
 /** List of idle movements
  * 0 = Straight resting position
@@ -10,14 +11,13 @@ Servo tailServo;
  * 5 = Happy mode <- Temporaraly stops idle movement and resumes on effect end
  */
 
+/*                                                                      <-- tail code depricated in V2
 // Array with usable tail positions in degrees
 uint16_t tailPositions[] = {90, 45, 135, 0, 180};  // Preselected tail angles
 uint8_t wiggleCount = 0;                            // Amount of wiggles done
 bool wiggling = false;                             // Is the tail currently wiggling
 
-/**
- * Select next idle movement and set servo position to that.
- */
+// Select next idle movement and set servo position to that.
 void idleMovementTail() {
   if (wiggling) {
     // Happy mode
@@ -63,5 +63,27 @@ void wiggleTail() {
     wiggling = false;
     tailServo.write(90);
     selectNextTailIdleMovevent();
+  }
+}
+*/
+
+uint8_t phonePositions[] = {0, 30, 60, 90, 120, 150, 180};   // Preselected tail angles
+uint8_t currentPhonePosition = 0;                     // Current position the phone is in
+
+void phoneUp() {
+  if ((currentPhonePosition + 1) < 7) {
+    currentPhonePosition ++;
+    phoneServo.write(phonePositions[currentPhonePosition]);
+  } else {
+    Serial.println("Phone is in max position");
+  }
+}
+
+void phoneDown(){
+  if (currentPhonePosition != 0) {
+    currentPhonePosition --;
+    phoneServo.write(phonePositions[currentPhonePosition]);
+  } else {
+    Serial.println("Phone is in min position");
   }
 }

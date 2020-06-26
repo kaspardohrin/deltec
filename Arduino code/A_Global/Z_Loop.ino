@@ -19,10 +19,10 @@ void updateBody() {
   }
 
   // Update tail motion
-  if (currentMillis - previousMillisIdleTail >= intervalIdleTail) {
-    previousMillisIdleTail = currentMillis;
-    idleMovementTail();
-  }
+  // if (currentMillis - previousMillisIdleTail >= intervalIdleTail) {      <-- tail code depricated in V2
+  //   previousMillisIdleTail = currentMillis;
+  //   idleMovementTail();
+  // }
 
   // Update eye blink
   if (currentMillis - previousMillisBlink >= intervalBlink) {
