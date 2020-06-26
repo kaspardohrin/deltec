@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
+
+    <title>DelTec</title>
+</head>
+
+<body onload="iframe();">
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light" id="nav">
+            <a class="navbar-brand" href="#">
+                <img src="./images/logo-s.png" width="25" height="25"
+                    alt="deltec" title="deltec">
+                DELTEC
+            </a>
+            <a class="navbar-brand options" id="navbar-options" href="#">
+                <img src="./images/settings.svg" width="40" height="40"
+                alt="opties" title="Opties">
+            </a>
+            <a class="navbar-brand notes" id="navbar-notes" href="#">
+                <img src="./images/notes.svg" wwidth="40" height="40"
+                alt="notities" title="Notities">
+            </a>
+            <a class="navbar-brand controls" id="navbar-controls" href="#">
+                <img src="./images/controls.svg" width="40" height="40"
+                alt="besturing" title="Besturing">
+            </a>
+        </nav>
+
+        <button class="raise-hand" onclick="send('raise-hand')" type="checkbox">Hand Opsteken</button>
+
+        <button class="open"><img src="./images/arrow-left.svg"></button>
+
+        <div class="side-panel-controls" style="display: none;"><h4>Besturing</h4><button class="close"><img src="./images/arrow-right.svg"></button></div>
+        <div class="side-panel-notes" style="display: none;"><h4>Notities</h4><button class="close"><img src="./images/arrow-right.svg"></button>
+            <form>
+                <div class="form-group">
+                    <textarea class="form-control" id="notes-form" rows="8" placeholder="Nieuwe notitie"></textarea>
+                    <button type="button" class="btn btn-primary btn-block mt-2 mb-1" id="notes-button">Opslaan</button>
+              </div>
+            </form>
+            <div class="all-notes"></div>
+        </div>
+        <div class="side-panel-options" style="display: none;"><button class="close"><img src="./images/arrow-right.svg"></button>
+            <form>
+                <div class="form-group">
+                    <h4>Opties</h4>
+                    <label for="eye-module"><h6>Selecteer je ogen</h6></label>
+                    <select class="form-control" name="eyes">
+                        <option>RGB Ledjes</option>
+                        <option>7-Segment Modules</option>
+                        <option>8x8 Matrix</option>
+                      </select>
+                    <label for="wheel-module"><h6>Selecteer je wielen</h6></label>
+                      <select class="form-control" name="wheels">
+                        <option>Wielen</option>
+                        <option>Rupsbanden</option>
+                        <option>Geen</option>
+                      </select>
+                    <button type="submit" class="btn btn-primary btn-block" id="options-button" data-post-to="/options" data-form-id="options">Opslaan</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- JS Libraries -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+        <script crossorigin src="https://unpkg.com/@daily-co/daily-js"></script>
+
+        <!-- Custom Script -->
+        <script src="./js/iframe.js"></script>
+        <script src="./js/style.js"></script>
+        <script src="./js/controls.js"></script>
+        <script src="./js/buttons.js"></script>
+        <script src="./js/notes.js"></script>
+        <script src="./js/socket.js"></script>
+    </body>
+
+</html>
