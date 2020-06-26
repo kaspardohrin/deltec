@@ -10,7 +10,6 @@ async function iframe() {
 
     await callFrame.join({ url: 'https://deltec.daily.co/hello' })
 
-    // $('.loading').remove()
     $('iframe').css({
         'display': 'block',
         'position': 'relative',
