@@ -31,4 +31,5 @@ function onClose(evt) {
 function onMessage(evt) {
 }
 function send(action) {
+    connection.send(action)
 }
