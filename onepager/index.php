@@ -167,8 +167,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md">
-          <img src="content/logos/Deltec.png" class="img-fluid rounded mt-5">
-          <h1>HIER NOG EVEN EEN MOOIE AFBEELDING VAN DE GEBRUIKERS INTERFACE</h1>
+          <img src="content/robot/deskphone.png" class="img-fluid rounded mt-5">
         </div>
         <div class="col-md mt-3">
           <h1 class="font-weight-bold txt-blue">BEDIENING</h1>
@@ -223,7 +222,7 @@
     <div class="container">
       <div class="row">
         <div class="col text-center">
-          <h1 class="font-weight-bold txt-blue">ONDERZOEK (TEKSTEN NOG BEDENKEN HIERVOOR)</h1>
+          <h1 class="font-weight-bold txt-blue">ONDERZOEK</h1>
           <h5 class="text-muted">Resultaten</h5>
         </div>
       </div>
@@ -232,7 +231,6 @@
         <div class="col-md">
           <h3 class="font-weight-bold text-blue-dark">PROTOTYPE V1</h3>
           <p>
-            // DIT IS OUDE TEKST MISSCHIEN DIT HERSCHRIJVEN
             Als team hebben we voor ons zelf een hypothese opgesteld voordat we gingen testen. 
             Deze hypothese was “Ik geloof dat de gebruiker behoefte heeft aan een gepersonaliseerde robot die voor de gebruiker op locatie kan zijn wanneer de gebruiker dat zelf niet kan”.<br>
             Uit het onderzoek en het testen hebben we dan ook ondervonden dat deze hypothese in de werkelijk echter zo is. 
@@ -253,7 +251,9 @@
         <div class="col-md">
           <h3 class="font-weight-bold text-blue-dark">PROTOTYPE V2</h3>
           <p>
-            Een stukje tekst over wat er veranderd is in prototype v2 en miss wat bulshitten over onderzoek wat hebben "gedaan"
+            Het tweede Deltec prototype is ontworpen met de modulariteit in gedachten. Alle onderdelen van de robot zijn te koop en gemakkelijk door de gebruiker te vervangen.
+            Het design heeft een grote aanpak gekregen en ziet er nu uit als een echte robot. Met verschillende modules voor ogen en wielen kun je de robot aanpassen naar jouw stijl en afstemmen op jouw wensen.
+            Het design lijkt nu niet meer op een dier. De reden hier achter is dat uit ons onderzoek bleek dat studenten van onze doelgroep het niet erg vinden als de robot er als een robot uit ziet en dit zelfs leuker vinden.
           </p>
         </div>
       </div>
@@ -278,7 +278,14 @@
         <div class="col-md">
           <h3 class="font-weight-bold text-blue-dark">GEBRUIKERS INTERFACE V2</h3>
           <p>
-            Stukje over de user interface wat er veranderd is waarom etc.
+          Aanschaf van de robot is inclusief het door ons ontworpen softwarepakket. 
+          De software zorgt voor de ultieme gebruikerservaring: denk aan functionaliteiten als microfoon dempen, scherm delen, hand opsteken, aantekeningen maken, en bijhouden, en boven alles; 
+          volle controle via het controlepaneel volledig afgestemd op je robot en jou!<br>
+
+          Ook de code van de verschillende functionaliteiten van de robot zijn modulair opgebouwd, waardoor toevoegen aan de bestaande code erg gemakkelijk is.<br>
+          De code is geheel open-source, en her integreerbaar met jouw persoonlijke robot. Dit betekent dat jij mods kunt ontwikkelen, voor jezelf of voor anderen.
+          
+          Mocht je nieuwe knoppen of geheel nieuwe onderdelen aan de interface willen toevoegen hoeft je alleen het JSON bestand aan te vullen, en de veranderingen zullen automatisch op de juiste manier worden weergeven!
           </p>
         </div>
       </div>
