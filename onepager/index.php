@@ -224,7 +224,7 @@
     <div class="container">
       <div class="row">
         <div class="col text-center">
-          <h1 class="font-weight-bold txt-blue">ONDERZOEK</h1>
+          <h1 class="font-weight-bold txt-blue mt-3">ONDERZOEK</h1>
           <h5 class="text-muted">Resultaten</h5>
         </div>
       </div>
@@ -301,23 +301,18 @@
         <div class="col-md">
           <h3 class="font-weight-bold text-blue-dark">STRATEGIE</h3>
           <p>
-            Lorum Ipsum bla bla bla. hier mag iris wat verzinnen over haar onderzoek
+            Om de Deltec robot succesvol te maken is er een strategie opgesteld, namelijk de ‘samen slimmer strategie’. 
+            Deze combinatie van de brandactivation- en fanstrategie van Michels, zorgen voor de perfecte ingrediënten om het cirkeltje rond te maken. Zo heeft Deltec een eigen Instagram-pagina en een eigen YouTube-kanaal. 
+            Een tekst die bijvoorbeeld op de website kan komen, waarin dit geïmplementeerd is: <br>
+            <br>
+            "Daarnaast is Deltec ook actief op social media! Anderen die je voorgingen, deelden hun ervaring met de Deltec robot. Dit is te zien op ons YouTube-kanaal, maar ook op onze Instagram-pagina. 
+            Bovendien worden er handige weetjes en tips gedeeld op beide kanalen, dus zorg ervoor dat je ze beide volgt! Wil jij jouw verhaal met ons delen? Dat kan! Zorg ervoor dat je deltec noemt of tagt!”<br>
+            <br>
+            Hierin is de crossmedialiteit erg belangrijk en wordt er ook een enthousiasme opgewekt bij de gebruiker(s).
           </p>
         </div>
         <div class="col-md-4 ml-5 mb-5">
-          <img src="content/logos/Deltec_no_text.png" class="img-fluid rounded">
-        </div>
-      </div>
-      <!-- Iris -->
-      <div class="row">
-        <div class="col-md-4 mr-5 mb-5">
-          <img src="content/logos/Deltec_no_text.png" class="img-fluid rounded">
-        </div>
-        <div class="col-md">
-          <h3 class="font-weight-bold text-blue-dark">Ruimte voor spul van iris</h3>
-          <p>
-            Lorum Ipsum bla bla bla. hier mag iris wat verzinnen over haar onderzoek
-          </p>
+          <img src="content/misc/instagram.jpg" class="img-fluid rounded">
         </div>
       </div>
     </div>
