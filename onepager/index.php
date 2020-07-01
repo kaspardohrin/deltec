@@ -113,13 +113,15 @@
           <img src="content/misc/Iris.jpg" class="img-fluid rounded" alt="Iris van Sambeek">
           <p class="mt-3">
             <span class="font-weight-bold">Opleiding</span><br>
-            // TODO je opleiding<br>
+            communicatie<br>
             <span class="font-weight-bold">Rol</span><br>
-            // TODO Jouw rollen<br>
+            Marketeer | Storytelling | Grafisch designer | User testing<br>
             <span class="font-weight-bold">Contact</span><br>
             0941249@hr.nl<br>
             <span class="font-weight-bold">Over mij</span><br>
-            // TODO Iets over jezelf
+            Een project van begin tot eind helemaal uitwerken vind ik geweldig. Ik vind het mooi om te zien wanneer een product echt tot leven komt, wanneer er over de positionering wordt nagedacht. 
+            Hier de perfecte strategie aan koppelen is een uitdaging, maar wel precies een uitdaging binnen mijn straatje.<br>
+            Alle juiste communicatiemiddelen inzetten om een product succesvol te maken is wat ik het beste doe. Dat kwam dit project dus goed van pas.
           </p>
         </div>
       </div>
@@ -263,7 +265,11 @@
         <div class="col-md">
           <h3 class="font-weight-bold text-blue-dark">MODULARITEIT</h3>
           <p>
-            // Roel schrijft hier een tekstje over wat we hebben gedaan voor modulariteit en waarom dit belangrijk is
+            De focus van deze robot ligt op modulariteit en de "right to repair". Dit houdt in dat onze robot met verschillende modules aangepast kan worden.<br>
+            De modules zijn zo ontworpen dat de gebruiker simpelweg een onderdeel van de robot afschuift en de nieuwe erop schuift.
+            Vervolgens geeft de gebruiker in de interface aan welke modules er op de robot zitten en de code regelt de rest.<br>
+            Alle hardware in de robot is ook gemakkelijk los te halen met een paar schroeven of een klik systeem. Geen rare warrenty stickers of onbekende schroef standaarden.
+            We maken het de consument zo gemakkelijk en goedkoop mogelijk om onderdelen te vervangen. Dit zorgt voor een langere levensduur van het product, een blije consument en minder E-waste.
           </p>
         </div>
         <div class="col-md-4 ml-5 mb-5">
@@ -273,7 +279,7 @@
       <!-- Gebruikers interface -->
       <div class="row">
         <div class="col-md-4 mr-5 mb-5">
-          <img src="content/logos/Deltec_no_text.png" class="img-fluid rounded">
+          <img src="content/robot/deskphone.png" class="img-fluid rounded">
         </div>
         <div class="col-md">
           <h3 class="font-weight-bold text-blue-dark">GEBRUIKERS INTERFACE V2</h3>
@@ -293,7 +299,7 @@
       <!-- Iris -->
       <div class="row">
         <div class="col-md">
-          <h3 class="font-weight-bold text-blue-dark">Ruimte voor spul van iris</h3>
+          <h3 class="font-weight-bold text-blue-dark">STRATEGIE</h3>
           <p>
             Lorum Ipsum bla bla bla. hier mag iris wat verzinnen over haar onderzoek
           </p>
